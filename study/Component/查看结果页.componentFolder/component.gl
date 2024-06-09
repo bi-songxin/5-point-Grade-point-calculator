@@ -1,0 +1,6 @@
+﻿<Methods>
+  <Method MethodDir="WindowMethod" FileName="form10_FormLoadAction.method" Code="form10_FormLoadAction" Name="form10_窗体加载事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="清空记录_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="JGButton2_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton3_OnClick.method" Code="JGButton3_OnClick" Name="将Excel表导入到数据库_单击事件" SourceType="Common" />
+</Methods>

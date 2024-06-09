@@ -1,0 +1,8 @@
+﻿<Methods>
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="开始计算_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="初始化计算器_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGToolbarMenu1_OnClick.method" Code="JGToolbarMenu1_OnClick" Name="JGToolbarMenu1_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGToolbarMenu2_OnClick.method" Code="JGToolbarMenu2_OnClick" Name="JGToolbarMenu2_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGToolbarMenu3_OnClick.method" Code="JGToolbarMenu3_OnClick" Name="JGToolbarMenu3_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGIntegerBoxColumnscore_OnValueChanged.method" Code="JGIntegerBoxColumnscore_OnValueChanged" Name="成绩_值改变事件" SourceType="Common" />
+</Methods>

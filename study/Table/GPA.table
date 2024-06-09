@@ -1,0 +1,27 @@
+﻿<Table id="6c09622256ef4643baae74acff9de939" code="GPA" name="绩点结果" canModifyData="true" canModifyStructure="true" isGenerateApi="false">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2024-06-03 17:29:32]]></CreationTime>
+  <Modifier><![CDATA[elibi]]></Modifier>
+  <ModificationTime><![CDATA[2024-06-07 00:25:38]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="a293b2c29ecc44cc9695fac7c62938ef" code="gpa" name="绩点" domain="" dataType="number" length="50" precision="4" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="0ab7d175079b450fa99a307cb95bb0c3" code="study_data" name="日期" domain="" dataType="longDate" length="" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true" />
+  <ExtInfo>
+    <TableApi actions="" />
+  </ExtInfo>
+</Table>

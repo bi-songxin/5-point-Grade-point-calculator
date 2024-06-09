@@ -1,0 +1,40 @@
+﻿<form type="1002" code="form1" isExtendable="false" owner="elibi" platformVersion="3" version="1" IsLocked="False" lastWriteTime="2024-06-09 16:29:02Z">
+  <propertys>
+    <property name="Height"><![CDATA[557]]></property>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="MultiHeight"><![CDATA[space]]></property>
+    <property name="MultiWidth"><![CDATA[space]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[登录页]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="IsWindowReport"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGLabel Code="JGLabel13" LabelText="copyright  by Eli Bi" Height="22" Width="134" PercentHeight="3.9%" PercentWidth="14%" Top="439" Left="438" TabIndex="1" ForeColor="255, 0, 0" MultiHeight="22px" MultiWidth="134px" ThemeVar="null" />
+    <JGImage Code="JGImage1" Height="139" Width="179" PercentHeight="25%" PercentWidth="18.6%" Top="104" Left="154" TabIndex="4" ImageValue="Fileno_8.png" ImageObject="Fileno_8" MultiHeight="139px" MultiWidth="179px" />
+    <JGButtonGroup Code="JGButtonGroup1" Width="259" Height="32" Top="241" Left="477" PercentHeight="5.7%" PercentWidth="27%" TabIndex="3" MultiHeight="32px" MultiWidth="259px">
+      <JGButtonGroupItem Code="JGButtonGroupItem1" LabelText="登录" OnClick="JGButtonGroupItem1_OnClick" />
+      <JGButtonGroupItem Code="JGButtonGroupItem2" LabelText="未注册" OnClick="JGButtonGroupItem2_OnClick" />
+    </JGButtonGroup>
+    <JGLabel Code="JGLabel1" LabelText="欢迎登录5分制计算器" Width="138" PercentHeight="4.3%" PercentWidth="14.4%" Top="104" Left="384" TabIndex="2" MultiHeight="24px" MultiWidth="138px" />
+    <JGTextBox Code="JGTextBox1" LabelText="学号" PercentHeight="4.7%" PercentWidth="24.5%" Top="147" Left="362" TabIndex="1" LabelWidth="70" TableName="stu_enroll" ColumnName="stuNo" IsMust="True" MultiHeight="26px" MultiWidth="235px" />
+    <JGPassword Code="JGPassword1" LabelText="密码" PercentHeight="4.7%" PercentWidth="24.5%" Top="194" Left="362" TabIndex="0" LabelWidth="70" TableName="stu_enroll" ColumnName="pass_Word" TextLength="255" IsMust="True" MultiHeight="26px" MultiWidth="235px" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+  <annotationInfo><![CDATA[]]></annotationInfo>
+</form>

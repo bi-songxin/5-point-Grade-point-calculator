@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component code="study" name="学生5分制绩点计算器" version="1.0.0" type="Business" category="" productCode="V-AppDesigner" isProductCodeManualChanged="false">
+  <Provider><![CDATA[elibi]]></Provider>
+  <Description><![CDATA[]]></Description>
+  <ServiceLastModfied><![CDATA[]]></ServiceLastModfied>
+  <References />
+  <UpgradeItemRoot>
+    <UpgradeItem DataVersion="1" PluginKeyValue="Toone.V3.DevSystem.EntityDesigner" BranchValueKey="" />
+    <UpgradeItem DataVersion="2" PluginKeyValue="Toone.V3.DevSystem.RefSearch" BranchValueKey="" />
+    <UpgradeItem DataVersion="10" PluginKeyValue="Toone.V3.DevSystem.FormDesignManager" BranchValueKey="" />
+    <UpgradeItem DataVersion="3" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="ExecuteRuleSet" />
+    <UpgradeItem DataVersion="3" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="OpenComponentReturnData" />
+    <UpgradeItem DataVersion="5" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="" />
+  </UpgradeItemRoot>
+</Component>

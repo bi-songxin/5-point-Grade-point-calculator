@@ -1,0 +1,27 @@
+﻿<Table id="8f91e4f7102d4014a32062960b62a6c3" code="stu_register" name="登录页" canModifyData="true" canModifyStructure="true" isGenerateApi="false">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2024-05-31 16:44:57]]></CreationTime>
+  <Modifier><![CDATA[elibi]]></Modifier>
+  <ModificationTime><![CDATA[2024-05-31 16:45:47]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="acc3fa41b3db40d68eafabf624235d5a" code="stuNo" name="学号" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="505f9e5c72ec48c4857a6893afba1bb5" code="pass_Word" name="密码" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true" />
+  <ExtInfo>
+    <TableApi actions="" />
+  </ExtInfo>
+</Table>

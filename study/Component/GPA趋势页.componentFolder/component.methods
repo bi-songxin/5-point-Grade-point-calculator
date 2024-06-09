@@ -1,0 +1,21 @@
+﻿<Methods>
+  <Method Code="form8_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="form8_窗体加载事件" SourceType="Common" MethodDir="WindowMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-07 00:24:33">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"GPA.gpa","sourceName":"GPA.gpa","type":"entityField"},{"destName":"GPA.study_data","sourceName":"GPA.study_data","type":"entityField"}],"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>GPA</EntityName><SourceType>Table</SourceType><SourceName>GPA</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>c00d0197e8ee4fee83b15b2273038703</ID><DataLoad /><IsFieldAutoMapping>False</IsFieldAutoMapping></dtEntityRelation><dtEntityColumnRelation><MasterID>c00d0197e8ee4fee83b15b2273038703</MasterID><DestName>GPA.gpa</DestName><SourceType>entityField</SourceType><SourceName>GPA.gpa</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>c00d0197e8ee4fee83b15b2273038703</MasterID><DestName>GPA.study_data</DestName><SourceType>entityField</SourceType><SourceName>GPA.study_data</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>c00d0197e8ee4fee83b15b2273038703</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>c00d0197e8ee4fee83b15b2273038703</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

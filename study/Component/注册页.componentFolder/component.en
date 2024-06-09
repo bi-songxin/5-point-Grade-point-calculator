@@ -1,0 +1,54 @@
+﻿<EntityConfig version="2.0">
+  <Entitys>
+    <Entity Code="stu_enroll" Name="注册表" IsExtendable="false" EntityType="" TableOrQueryCode="stu_enroll" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>stuNo</Code>
+          <Name>学号</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>pass_Word</Code>
+          <Name>密码</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>gender</Code>
+          <Name>性别</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+      </Columns>
+      <Events />
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

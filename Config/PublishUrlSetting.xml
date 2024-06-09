@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPublishUrlInfo>
+    <PublishUrlInfo>
+        <Name>TestService</Name>
+        <Url />
+        <ProductName>学生5分制绩点计算器</ProductName>
+        <UrlDeployType>Normal</UrlDeployType>
+        <IsDefault>true</IsDefault>
+        <IsLocal>true</IsLocal>
+    </PublishUrlInfo>
+    <PublishUrlInfo>
+        <Name>VStore</Name>
+        <Url>http://vstore.yindangu.net</Url>
+        <ProductName>学生5分制绩点计算器</ProductName>
+        <UrlDeployType>ToDesignPart</UrlDeployType>
+        <IsDefault>true</IsDefault>
+        <IsLocal>false</IsLocal>
+    </PublishUrlInfo>
+</ArrayOfPublishUrlInfo>

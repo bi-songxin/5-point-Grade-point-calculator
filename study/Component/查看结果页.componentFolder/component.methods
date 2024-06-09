@@ -1,0 +1,102 @@
+﻿<Methods>
+  <Method Code="form10_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="form10_窗体加载事件" SourceType="Common" MethodDir="WindowMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity2" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:15:26">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Worksheet","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"Worksheet.course","sourceName":"Worksheet.course","type":"entityField"},{"destName":"Worksheet.credit","sourceName":"Worksheet.credit","type":"entityField"},{"destName":"Worksheet.score","sourceName":"Worksheet.score","type":"entityField"}],"orderBy":null,"sourceName":"Worksheet","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>Worksheet</EntityName><SourceType>Table</SourceType><SourceName>Worksheet</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>e169de7a6b274565b2334cf649ad852a</ID><DataLoad /><IsFieldAutoMapping>False</IsFieldAutoMapping></dtEntityRelation><dtEntityColumnRelation><MasterID>e169de7a6b274565b2334cf649ad852a</MasterID><DestName>Worksheet.course</DestName><SourceType>entityField</SourceType><SourceName>Worksheet.course</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>e169de7a6b274565b2334cf649ad852a</MasterID><DestName>Worksheet.credit</DestName><SourceType>entityField</SourceType><SourceName>Worksheet.credit</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>e169de7a6b274565b2334cf649ad852a</MasterID><DestName>Worksheet.score</DestName><SourceType>entityField</SourceType><SourceName>Worksheet.score</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>e169de7a6b274565b2334cf649ad852a</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>e169de7a6b274565b2334cf649ad852a</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2" instanceName="从数据库获取数据到实体_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:15:18">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"GPA.gpa","sourceName":"GPA.gpa","type":"entityField"},{"destName":"GPA.study_data","sourceName":"GPA.study_data","type":"entityField"}],"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>GPA</EntityName><SourceType>Table</SourceType><SourceName>GPA</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>b0c669760bd04886aec0db76f8302f0c</ID><DataLoad /><IsFieldAutoMapping>False</IsFieldAutoMapping></dtEntityRelation><dtEntityColumnRelation><MasterID>b0c669760bd04886aec0db76f8302f0c</MasterID><DestName>GPA.gpa</DestName><SourceType>entityField</SourceType><SourceName>GPA.gpa</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>b0c669760bd04886aec0db76f8302f0c</MasterID><DestName>GPA.study_data</DestName><SourceType>entityField</SourceType><SourceName>GPA.study_data</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>b0c669760bd04886aec0db76f8302f0c</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>b0c669760bd04886aec0db76f8302f0c</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="清空记录_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DeleteConditionRelationData1" />
+  <evaluateRule code="BR_DeleteConditionRelationData2" />
+  <evaluateRule code="BR_ShowMessage1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:16:11">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"Worksheet","dsWhere":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>Worksheet</TableName><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData2" instanceName="删除数据库中的记录_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:16:33">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dtChileMaps":[{"orderNo":"1","tableName":"GPA","dsWhere":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtConditionMaster><TableName>GPA</TableName><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition><OrderNo>1</OrderNo></dtConditionMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 15:59:24">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"清除数据成功！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"清除数据成功！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime><IsUnModal>False</IsUnModal></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGButton2_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_ExportDataToExcel1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ExportDataToExcel" ruleName="导出数据库数据到Excel" instanceCode="BR_ExportDataToExcel1" instanceName="导出数据库数据到Excel" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:33:51">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"defaultFileName":"\"成绩表\"","fileType":"xlsx","items":[{"sheetName":"\"各学科成绩表\"","dataSource":"Worksheet","dataSourceType":"Table","filterCondition":null,"queryParam":null,"mapping":[{"fieldCode":"course","excelColName":"课程名","exportData":true,"orderType":""},{"fieldCode":"credit","excelColName":"学分","exportData":true,"orderType":""},{"fieldCode":"score","excelColName":"成绩","exportData":true,"orderType":""}]},{"sheetName":"\"历来绩点\"","dataSource":"GPA","dataSourceType":"Table","filterCondition":null,"queryParam":null,"mapping":[{"fieldCode":"gpa","excelColName":"绩点","exportData":true,"orderType":""},{"fieldCode":"study_data","excelColName":"日期","exportData":true,"orderType":""}]}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><DefaultFileName>"成绩表"</DefaultFileName><FileType>xlsx</FileType></dtMaster><dtItems><ID>7679ed70de3a437eb5f82dea7a7da7da</ID><SheetName>"各学科成绩表"</SheetName><DataSource>Worksheet</DataSource><DataSourceType>Table</DataSourceType><dsFilterCondition><![CDATA[<NewDataSet />]]]]><![CDATA[></dsFilterCondition></dtItems><dtItems><ID>33cc0897928a46c190144d2ecf78d089</ID><SheetName>"历来绩点"</SheetName><DataSource>GPA</DataSource><DataSourceType>Table</DataSourceType><dsFilterCondition><![CDATA[<NewDataSet />]]]]><![CDATA[></dsFilterCondition></dtItems><dtMapping><FieldCode>course</FieldCode><ExcelColName>课程名</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>7679ed70de3a437eb5f82dea7a7da7da</ItemID></dtMapping><dtMapping><FieldCode>credit</FieldCode><ExcelColName>学分</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>7679ed70de3a437eb5f82dea7a7da7da</ItemID></dtMapping><dtMapping><FieldCode>score</FieldCode><ExcelColName>成绩</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>7679ed70de3a437eb5f82dea7a7da7da</ItemID></dtMapping><dtMapping><FieldCode>gpa</FieldCode><ExcelColName>绩点</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>33cc0897928a46c190144d2ecf78d089</ItemID></dtMapping><dtMapping><FieldCode>study_data</FieldCode><ExcelColName>日期</ExcelColName><ExportData>True</ExportData><OrderType /><ItemID>33cc0897928a46c190144d2ecf78d089</ItemID></dtMapping></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton3_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="将Excel表导入到数据库_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_ImportExcelToDB1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ImportExcelToDB" ruleName="Excel导入到数据库表" instanceCode="BR_ImportExcelToDB1" instanceName="Excel导入到数据库表" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 14:49:26">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"fileSource":"","items":[{"targetTable":"Worksheet","sheetNum":"0","dataStartRow":"2","importNodeId":"","mapping":[{"fieldCode":"course","fieldName":"课程名","sourceType":"excelColName","sourceValue":""},{"fieldCode":"credit","fieldName":"学分","sourceType":"excelColName","sourceValue":""},{"fieldCode":"score","fieldName":"成绩","sourceType":"excelColName","sourceValue":""}]},{"targetTable":"GPA","sheetNum":"1","dataStartRow":"2","importNodeId":"","mapping":[{"fieldCode":"gpa","fieldName":"绩点","sourceType":"excelColName","sourceValue":""},{"fieldCode":"study_data","fieldName":"日期","sourceType":"excelColName","sourceValue":""}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFileSource /><dtSheetMapping><ID>02521582a3bc47c5a6ed762bf7cf894b</ID><TargetTable>Worksheet</TargetTable><SheetNum>0</SheetNum><DataStartRow>2</DataStartRow><ImportNodeId /></dtSheetMapping><dtSheetMapping><ID>a1d8e98b6c1a4f3eb0d86c97948ac59d</ID><TargetTable>GPA</TargetTable><SheetNum>1</SheetNum><DataStartRow>2</DataStartRow><ImportNodeId /></dtSheetMapping><dtFieldMapping><PID>02521582a3bc47c5a6ed762bf7cf894b</PID><TableCode>Worksheet</TableCode><FieldCode>course</FieldCode><FieldName>课程名</FieldName><SourceType>excelColName</SourceType></dtFieldMapping><dtFieldMapping><PID>02521582a3bc47c5a6ed762bf7cf894b</PID><TableCode>Worksheet</TableCode><FieldCode>credit</FieldCode><FieldName>学分</FieldName><SourceType>excelColName</SourceType></dtFieldMapping><dtFieldMapping><PID>02521582a3bc47c5a6ed762bf7cf894b</PID><TableCode>Worksheet</TableCode><FieldCode>score</FieldCode><FieldName>成绩</FieldName><SourceType>excelColName</SourceType></dtFieldMapping><dtFieldMapping><PID>a1d8e98b6c1a4f3eb0d86c97948ac59d</PID><TableCode>GPA</TableCode><FieldCode>gpa</FieldCode><FieldName>绩点</FieldName><SourceType>excelColName</SourceType></dtFieldMapping><dtFieldMapping><PID>a1d8e98b6c1a4f3eb0d86c97948ac59d</PID><TableCode>GPA</TableCode><FieldCode>study_data</FieldCode><FieldName>日期</FieldName><SourceType>excelColName</SourceType></dtFieldMapping></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

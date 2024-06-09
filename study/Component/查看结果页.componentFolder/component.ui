@@ -1,0 +1,46 @@
+﻿<form type="1002" code="form10" isExtendable="false" owner="elibi" platformVersion="3" version="1" IsLocked="False" lastWriteTime="2024-06-09 15:59:26Z">
+  <propertys>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="MultiHeight"><![CDATA[space]]></property>
+    <property name="MultiWidth"><![CDATA[space]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[form10_FormLoadAction]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[查看结果页]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="IsWindowReport"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton3" LabelText="将Excel表导入到数据库" Height="32" Width="156" PercentHeight="7.1%" PercentWidth="16.2%" Top="342" Left="431" TabIndex="10" OnClick="JGButton3_OnClick" MultiHeight="32px" MultiWidth="156px" />
+    <JGButton Code="JGButton2" LabelText="将数据导出到Excel" Height="32" Width="131" PercentHeight="7.1%" PercentWidth="13.6%" Top="342" Left="258" TabIndex="9" OnClick="JGButton2_OnClick" MultiHeight="32px" MultiWidth="131px" />
+    <JGDataGrid Code="JGDataGrid2" LabelText="列表" Width="343" Height="259" PercentHeight="57.6%" PercentWidth="35.7%" Top="53" Left="495" TabIndex="6" TableName="GPA" MultiHeight="259px" MultiWidth="343px">
+      <JGFloatBoxColumn Code="JGFloatBoxColumngpa" ColumnName="gpa" LabelText="绩点" TableName="GPA" />
+      <JGLongDateTimePickerColumn Code="JGLongDateTimePickerColumnstudy_data" ColumnName="study_data" LabelText="日期" TableName="GPA" />
+      <JGToolbar Code="JGToolbar1" />
+    </JGDataGrid>
+    <JGDataGrid Code="JGDataGrid1" LabelText="列表" Width="402" Height="259" PercentHeight="57.6%" PercentWidth="41.9%" Top="53" Left="97" TabIndex="2" TableName="Worksheet" MultiHeight="259px" MultiWidth="402px">
+      <JGTextBoxColumn Code="JGTextBoxColumncourse" ColumnName="course" LabelText="课程名" TableName="Worksheet" />
+      <JGIntegerBoxColumn Code="JGIntegerBoxColumncredit" ColumnName="credit" LabelText="学分" TableName="Worksheet" />
+      <JGIntegerBoxColumn Code="JGIntegerBoxColumnscore" ColumnName="score" LabelText="成绩" TableName="Worksheet" />
+      <JGToolbar Code="JGToolbar2" />
+    </JGDataGrid>
+    <JGLabel Code="JGLabel1" LabelText="你的历史GPA：" Width="134" PercentHeight="5.3%" PercentWidth="14%" Top="4" Left="97" TabIndex="2" MultiHeight="24px" MultiWidth="134px" />
+    <JGButton Code="JGButton1" LabelText="清空数据库记录" Height="32" Width="114" PercentHeight="7.1%" PercentWidth="11.9%" Top="342" Left="97" TabIndex="4" OnClick="JGButton1_OnClick" MultiHeight="32px" MultiWidth="114px" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+  <annotationInfo><![CDATA[]]></annotationInfo>
+</form>

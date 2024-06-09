@@ -1,0 +1,3 @@
+﻿<Methods>
+  <Method MethodDir="WindowMethod" FileName="form8_FormLoadAction.method" Code="form8_FormLoadAction" Name="form8_窗体加载事件" SourceType="Common" />
+</Methods>

@@ -1,0 +1,4 @@
+﻿<Methods>
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="JGButton1_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="JGButton2_单击事件" SourceType="Common" />
+</Methods>

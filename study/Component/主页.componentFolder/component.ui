@@ -1,0 +1,40 @@
+﻿<form type="1002" code="form4" isExtendable="false" owner="elibi" platformVersion="3" version="1" IsLocked="False" lastWriteTime="2024-06-09 14:26:28Z">
+  <propertys>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="Width"><![CDATA[1025]]></property>
+    <property name="MultiHeight"><![CDATA[space]]></property>
+    <property name="MultiWidth"><![CDATA[space]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[主页]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="IsWindowReport"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGLabel Code="JGLabel13" LabelText="copyright  by Eli Bi" Height="22" Width="134" PercentHeight="4.9%" PercentWidth="13.1%" Top="398" Left="474" TabIndex="1" ForeColor="255, 0, 0" MultiHeight="22px" MultiWidth="134px" ThemeVar="null" />
+    <JGLabel Code="JGLabel12" LabelText="5分制绩点计算器" Height="37" Width="126" PercentHeight="8.2%" PercentWidth="12.3%" Top="18" Left="230" TabIndex="1" ForeColor="0, 0, 0" MultiHeight="37px" MultiWidth="126px" ThemeVar="null" />
+    <JGLabel Code="JGLabel1111" LabelText="你的GPA分析" Height="22" Width="101" PercentHeight="4.9%" PercentWidth="9.9%" Top="212" Left="487" TabIndex="1" ForeColor="254, 255, 0" OnClick="JGLabel1111_OnClick" MultiHeight="22px" MultiWidth="101px" ThemeVar="null" />
+    <JGLabel Code="JGLabel113" LabelText="关于" Height="21" Width="34" PercentHeight="4.7%" PercentWidth="3.3%" Top="34" Left="772" TabIndex="1" ForeColor="0, 0, 0" OnClick="JGLabel113_OnClick" MultiHeight="21px" MultiWidth="34px" ThemeVar="null" />
+    <JGLabel Code="JGLabel112" LabelText="查看计算公式" Height="23" Width="101" PercentHeight="5.1%" PercentWidth="9.9%" Top="270" Left="487" TabIndex="1" ForeColor="254, 255, 0" OnClick="JGLabel112_OnClick" MultiHeight="23px" MultiWidth="101px" ThemeVar="null" />
+    <JGLabel Code="JGLabel111" LabelText="查看保存的成绩单" Height="22" Width="114" PercentHeight="4.9%" PercentWidth="11.1%" Top="186" Left="474" TabIndex="1" ForeColor="254, 255, 0" OnClick="JGLabel111_OnClick" MultiHeight="22px" MultiWidth="114px" ThemeVar="null" />
+    <JGLabel Code="JGLabel11" LabelText="功能介绍" Height="22" Width="89" PercentHeight="4.9%" PercentWidth="8.7%" Top="241" Left="499" TabIndex="1" ForeColor="254, 255, 0" OnClick="JGLabel11_OnClick" MultiHeight="22px" MultiWidth="89px" ThemeVar="null" />
+    <JGLabel Code="JGLabel1" LabelText="绩点计算" Height="22" Width="89" PercentHeight="4.9%" PercentWidth="8.7%" Top="156" Left="499" TabIndex="1" ForeColor="254, 255, 0" OnClick="JGLabel1_OnClick" MultiHeight="22px" MultiWidth="89px" ThemeVar="null" />
+    <JGImage Code="JGImage1" Height="417" Width="911" PercentHeight="92.7%" PercentWidth="88.9%" Top="3" Left="81" ImageValue="Fileno_4.jpg" ImageObject="Fileno_4" MultiHeight="417px" MultiWidth="911px" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+  <annotationInfo><![CDATA[]]></annotationInfo>
+</form>

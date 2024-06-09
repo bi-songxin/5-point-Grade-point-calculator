@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Datas>
+  <ViewData><![CDATA[]]></ViewData>
+  <DeployData><![CDATA[{
+    "actionEntity": {        
+        "datas": {
+            "values": []
+        }
+    },
+    "actionWindow": {
+        "datas": {
+            "values": []
+        }
+    },
+	"actionNavigationInfo":{
+        "datas": {
+            "values": []
+        }
+	}
+}]]></DeployData>
+</Datas>

@@ -1,0 +1,20 @@
+﻿<Project ToolsVersion="3.1">
+  <PropertyGroup>
+    <ProjectGuid>f4e24cbd-7869-47de-b814-591f0595e265</ProjectGuid>
+    <ProjectCode>学生5分制绩点计算器</ProjectCode>
+    <ProjectName>学生5分制绩点计算器</ProjectName>
+    <ProjectDesc>Toone V3 Development Platform - 版本 3.4.0.0</ProjectDesc>
+    <ProjectVersion>3.4.0.0</ProjectVersion>
+    <ProjectCreateTime>2024-05-30 20:22:52</ProjectCreateTime>
+    <ProjectConfigTime>2024-06-09 12:21:42</ProjectConfigTime>
+    <ProjectPerson>elibi</ProjectPerson>
+  </PropertyGroup>
+  <ItemGroup />
+  <WorkingSpaceInfo>
+    <WorkingSpaceKey></WorkingSpaceKey>
+    <EnterpriseId></EnterpriseId>
+  </WorkingSpaceInfo>
+  <Components>
+    <Component code="study" name="学生5分制绩点计算器" path="study\study.vcmp" parentCode="" />
+  </Components>
+</Project>

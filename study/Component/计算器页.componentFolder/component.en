@@ -1,0 +1,103 @@
+﻿<EntityConfig version="2.0">
+  <Entitys>
+    <Entity Code="Worksheet" Name="计算表" IsExtendable="false" EntityType="" TableOrQueryCode="Worksheet" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>course</Code>
+          <Name>课程名</Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>score</Code>
+          <Name>成绩</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>IntegerBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>credit</Code>
+          <Name>学分</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <WizardControlType>IntegerBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>danxuefen</Code>
+          <Name>单学分绩点</Name>
+          <DataType>integer</DataType>
+          <Length>50</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+          <WizardControlType>IntegerBox</WizardControlType>
+          <FormatType />
+        </Column>
+      </Columns>
+      <Events />
+    </Entity>
+    <Entity Code="GPA" Name="绩点结果" IsExtendable="false" EntityType="" TableOrQueryCode="GPA" TemplateId="" TemplateCode="" CreatedFrom="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>128</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+          <WizardControlType>TextBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>gpa</Code>
+          <Name>绩点</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+          <WizardControlType>FloatBox</WizardControlType>
+          <FormatType />
+        </Column>
+        <Column>
+          <Code>study_data</Code>
+          <Name>日期</Name>
+          <DataType>longDate</DataType>
+          <Length></Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression />
+          <WizardControlType>LongDateTimePicker</WizardControlType>
+          <FormatType />
+        </Column>
+      </Columns>
+      <Events />
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

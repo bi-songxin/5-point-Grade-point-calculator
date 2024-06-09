@@ -1,0 +1,148 @@
+﻿<Methods>
+  <Method Code="JGToolbarMenu2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGToolbarMenu2_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_DeleteListSelectRow1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow1" instanceName="删除实体记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 20:18:28">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"Condition":"","deleteType":"0","TableName":"Worksheet","EntityType":"window"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition /><DeleteType>0</DeleteType><TableName>Worksheet</TableName><EntityType>window</EntityType></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGToolbarMenu3_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGToolbarMenu3_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_UpdateRecord1" />
+  <evaluateRule code="BR_ShowMessage1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 20:19:24">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceMap":[{"dataMap":null,"dataSource":"Worksheet","dataSourceType":"window","destTab":"Worksheet","isSaveAll":false,"isFieldAutoMapping":true}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ID>db75e9b1d2ca488bbe4731fc14be43ad</ID><SourceName>Worksheet</SourceName><SourceType>window</SourceType><SourceNameType>Worksheet(界面实体)</SourceNameType><IsSaveAll>False</IsSaveAll><TableName>Worksheet</TableName><IsFieldAutoMapping>True</IsFieldAutoMapping></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 20:28:33">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"保存成功！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"保存成功！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime><IsUnModal>false</IsUnModal></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGToolbarMenu1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGToolbarMenu1_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_AddTableRecord1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 20:27:31">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"AddLocation":"3","Mappings":null,"TableType":"window","TableName":"Worksheet","NumCount":"1"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><RangCount>1</RangCount><Location>3</Location><EntityType>window</EntityType><EntityName>Worksheet</EntityName></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="开始计算_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_CalculateToColumn1" />
+  <evaluateRule code="BR_AddDataBaseRecord1" />
+  <evaluateRule code="BR_DataBaseDataToInterfaceEntity1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="CalculateToColumn" ruleName="计算公式的值并赋值给指定字段" instanceCode="BR_CalculateToColumn1" instanceName="计算公式的值并赋值给指定字段" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-06 21:29:06">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"destFieldName":"GPA.gpa","formula":"(TotalColumn(\"Worksheet\",\"danxuefen\"))/(TotalColumn(\"Worksheet\",\"credit\"))"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><txtLeftField>GPA.gpa</txtLeftField><txtRightExpress>(TotalColumn("Worksheet","danxuefen"))/(TotalColumn("Worksheet","credit"))</txtRightExpress></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddDataBaseRecord" ruleName="新增数据库记录" instanceCode="BR_AddDataBaseRecord1" instanceName="新增数据库记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-07 00:16:20">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"dataMap":[{"colName":"GPA.gpa","colValue":"[GPA].[gpa]","valueType":"expression"},{"colName":"GPA.study_data","colValue":"DateTimeNow()","valueType":"expression"}],"dataSource":"GPA"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><TableName>GPA</TableName><ID>669f3a0c-1fa0-4982-8bb7-4353d7e4d652</ID></dtMaster><dtTableColumns><MasterID>669f3a0c-1fa0-4982-8bb7-4353d7e4d652</MasterID><TargetField>GPA.gpa</TargetField><ValueType>expression</ValueType><ValueField>[GPA].[gpa]</ValueField></dtTableColumns><dtTableColumns><MasterID>669f3a0c-1fa0-4982-8bb7-4353d7e4d652</MasterID><TargetField>GPA.study_data</TargetField><ValueType>expression</ValueType><ValueField>DateTimeNow()</ValueField></dtTableColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="False" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 20:52:41">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":true,"itemqueryparam":null,"items":null,"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>GPA</EntityName><SourceType>Table</SourceType><SourceName>GPA</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>47d10b7ef57a46f5ba736a3e44927717</ID><DataLoad /><IsFieldAutoMapping>True</IsFieldAutoMapping></dtEntityRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtPager><PagerMasterID>47d10b7ef57a46f5ba736a3e44927717</PagerMasterID><isPaging>False</isPaging><pageNo /><pageSize /></dtPager><dtTotalRecordSave><TotalRecordSaveMasterID>47d10b7ef57a46f5ba736a3e44927717</TotalRecordSaveMasterID><isSaveTotalRecord>False</isSaveTotalRecord><targetType>methodVariant</targetType></dtTotalRecordSave></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButton2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="初始化计算器_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_ClearInterfaceEntityData1" />
+  <evaluateRule code="BR_ShowMessage1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BR_ClearInterfaceEntityData1" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-06 20:42:43">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceNames":[{"name":"Worksheet"},{"name":"GPA"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtColumn><Code>Worksheet</Code></dtColumn><dtColumn><Code>GPA</Code></dtColumn></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-03 23:22:26">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"初始化成功！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"初始化成功！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime><IsUnModal>false</IsUnModal></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGIntegerBoxColumnscore_OnValueChanged" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="成绩_值改变事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_CalculateToColumn1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="CalculateToColumn" ruleName="计算公式的值并赋值给指定字段" instanceCode="BR_CalculateToColumn1" instanceName="计算公式的值并赋值给指定字段" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-06 20:27:32">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"destFieldName":"Worksheet.danxuefen","formula":"([Worksheet].[score]/10-5)*[Worksheet].[credit]"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><txtLeftField>Worksheet.danxuefen</txtLeftField><txtRightExpress>([Worksheet].[score]/10-5)*[Worksheet].[credit]</txtRightExpress></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

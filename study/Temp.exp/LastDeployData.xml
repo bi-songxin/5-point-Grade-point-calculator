@@ -1,0 +1,2855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component code="study" name="学生5分制绩点计算器" desc="" matchVersion="0">
+    <windows>
+        <window type="1" code="form8" name="GPA趋势页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Width">1014</property>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">GPA趋势页</property>
+                <property code="RefResources" />
+                <property code="Code">form8</property>
+            </propertys>
+            <controls>
+                <control code="JGChart1" type="JGChart">
+                    <propertys>
+                        <property code="Code">JGChart1</property>
+                        <property code="Dock">Fill</property>
+                        <property code="GraphSettings">{"PluginID":"FusionChart","PluginName":"Fusion图表","ChartID":"1010","chartName":"折线","chartType":"Line","is3D":"false","path":"fusionchart/FusionchartFactory","palette":"1","size":{"high":"400","width":"600"},"title":{"font":"黑体","fontSize":"18","fontColor":"#000000","alpha":"0","bgColor":null,"bold":"0","italic":"0","strikeout":"0","underline":"0","show":"true","horizontal":"center","vertical":"top","title":"您的GPA趋势"},"subtitle":{"font":"黑体","fontSize":"12","fontColor":"#000000","alpha":"0","bgColor":null,"bold":"0","italic":"0","strikeout":"0","underline":"0","show":"true","horizontal":"center","vertical":"top","title":null},"inCanvas":{"font":"黑体","fontSize":"29","fontColor":"#696969","alpha":"100","bgColor":null,"bold":"0","italic":"0","strikeout":"0","underline":"0","top":"45","bottom":"50","left":"25","right":"25"},"outCanvas":{"font":"黑体","fontSize":"29","fontColor":"#000000","alpha":"100","bgColor":null,"bold":"0","italic":"0","strikeout":"0","underline":"0"},"xAxis":{"Title":null,"font":"黑体","fontSize":"12","fontColor":"#333333","labelDisplay":"WRAP","slantLabels":"0","bold":"0","italic":"0","strikeout":"0","underline":"0","boundaryGap":"false","scale":"false","LabelShow":"true","LineShow":"true","TickShow":"true","alignWithLabel":"true","nameGap":"25","nameLocation":"middle"},"yAxis":{"Title":null,"font":"黑体","fontSize":"12","fontColor":"#333333","labelDisplay":"WRAP","slantLabels":"0","bold":"0","italic":"0","strikeout":"0","underline":"0","boundaryGap":"false","scale":"false","LabelShow":"true","LineShow":"true","TickShow":"true","isGradientColor":"false","nameGap":"35","nameLocation":"middle"},"DataInfo":{"type":"Entity","name":"GPA","value":"GPA"},"DataColumns":{"value":["gpa","study_data"]},"serie":{"isVar":"true","name":null,"value":null,"values":{"value":"GPA"},"show":"true","horizontal":"center","vertical":"bottom","orient":"horizontal","itemGap":"10"},"x":{"isVar":"true","name":null,"value":"study_data"},"y":{"name":"绩点","code":"gpa","stack":"false","showlabel":"true","position":"top","smooth":"true","symbol":"circle","connectNulls":"false"}}</property>
+                        <property code="Height">450</property>
+                        <property code="MultiHeight">450px</property>
+                        <property code="MultiWidth">1014px</property>
+                        <property code="PercentHeight">100%</property>
+                        <property code="PercentWidth">100%</property>
+                        <property code="TabIndex">0</property>
+                        <property code="Width">1014</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnChartClick" name="图形单击">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>GPA</dataSource>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule code="study.form8.form8_FormLoadAction" />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="form8_FormLoadAction" name="form8_窗体加载事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q1="http://www.w3.org/2001/XMLSchema" p9:type="q1:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"GPA.gpa","sourceName":"GPA.gpa","type":"entityField"},{"destName":"GPA.study_data","sourceName":"GPA.study_data","type":"entityField"}],"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q2="http://www.w3.org/2001/XMLSchema" p9:type="q2:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form8.form8_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form8","ruleSetCode": "form8_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="GPA" name="GPA" chineseName="绩点结果" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="gpa" name="gpa" chineseName="绩点" type="number" length="50" precision="4" defaultValue="" formatType="">
+                            <expression />
+                        </entityField>
+                        <entityField code="study_data" name="study_data" chineseName="日期" type="longDate" length="" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions />
+        </window>
+        <window type="1" code="form4" name="主页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Width">1025</property>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">主页</property>
+                <property code="RefResources" />
+                <property code="Code">form4</property>
+            </propertys>
+            <controls>
+                <control code="JGLabel13" name="copyright  by Eli Bi" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel13</property>
+                        <property code="ForeColor">255, 0, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">copyright  by Eli Bi</property>
+                        <property code="Left">474</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">134px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">13.1%</property>
+                        <property code="Top">398</property>
+                        <property code="Width">134</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel12" name="5分制绩点计算器" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel12</property>
+                        <property code="ForeColor">0, 0, 0</property>
+                        <property code="Height">37</property>
+                        <property code="LabelText">5分制绩点计算器</property>
+                        <property code="Left">230</property>
+                        <property code="MultiHeight">37px</property>
+                        <property code="MultiWidth">126px</property>
+                        <property code="PercentHeight">8.2%</property>
+                        <property code="PercentWidth">12.3%</property>
+                        <property code="Top">18</property>
+                        <property code="Width">126</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel1111" name="你的GPA分析" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel1111</property>
+                        <property code="ForeColor">254, 255, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">你的GPA分析</property>
+                        <property code="Left">487</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">101px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">9.9%</property>
+                        <property code="Top">212</property>
+                        <property code="Width">101</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel1111_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel113" name="关于" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel113</property>
+                        <property code="ForeColor">0, 0, 0</property>
+                        <property code="Height">21</property>
+                        <property code="LabelText">关于</property>
+                        <property code="Left">772</property>
+                        <property code="MultiHeight">21px</property>
+                        <property code="MultiWidth">34px</property>
+                        <property code="PercentHeight">4.7%</property>
+                        <property code="PercentWidth">3.3%</property>
+                        <property code="Top">34</property>
+                        <property code="Width">34</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel113_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel112" name="查看计算公式" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel112</property>
+                        <property code="ForeColor">254, 255, 0</property>
+                        <property code="Height">23</property>
+                        <property code="LabelText">查看计算公式</property>
+                        <property code="Left">487</property>
+                        <property code="MultiHeight">23px</property>
+                        <property code="MultiWidth">101px</property>
+                        <property code="PercentHeight">5.1%</property>
+                        <property code="PercentWidth">9.9%</property>
+                        <property code="Top">270</property>
+                        <property code="Width">101</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel112_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel111" name="查看保存的成绩单" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel111</property>
+                        <property code="ForeColor">254, 255, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">查看保存的成绩单</property>
+                        <property code="Left">474</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">114px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">11.1%</property>
+                        <property code="Top">186</property>
+                        <property code="Width">114</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel111_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel11" name="功能介绍" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel11</property>
+                        <property code="ForeColor">254, 255, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">功能介绍</property>
+                        <property code="Left">499</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">89px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">8.7%</property>
+                        <property code="Top">241</property>
+                        <property code="Width">89</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel11_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel1" name="绩点计算" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel1</property>
+                        <property code="ForeColor">254, 255, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">绩点计算</property>
+                        <property code="Left">499</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">89px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">8.7%</property>
+                        <property code="Top">156</property>
+                        <property code="Width">89</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form4.JGLabel1_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">417</property>
+                        <property code="ImageObject">Fileno_4</property>
+                        <property code="ImageValue">Fileno_4.jpg</property>
+                        <property code="Left">81</property>
+                        <property code="MultiHeight">417px</property>
+                        <property code="MultiWidth">911px</property>
+                        <property code="PercentHeight">92.7%</property>
+                        <property code="PercentWidth">88.9%</property>
+                        <property code="Top">3</property>
+                        <property code="Width">911</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel1_OnClick" name="JGLabel1_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q3="http://www.w3.org/2001/XMLSchema" p9:type="q3:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form9","windowName":"计算器页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q4="http://www.w3.org/2001/XMLSchema" p9:type="q4:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel11_OnClick" name="JGLabel11_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q5="http://www.w3.org/2001/XMLSchema" p9:type="q5:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form6","windowName":"功能介绍页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q6="http://www.w3.org/2001/XMLSchema" p9:type="q6:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel11_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel11_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel111_OnClick" name="JGLabel111_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q7="http://www.w3.org/2001/XMLSchema" p9:type="q7:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form10","windowName":"查看结果页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q8="http://www.w3.org/2001/XMLSchema" p9:type="q8:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel111_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel111_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel1111_OnClick" name="JGLabel1111_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q9="http://www.w3.org/2001/XMLSchema" p9:type="q9:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form8","windowName":"GPA趋势页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q10="http://www.w3.org/2001/XMLSchema" p9:type="q10:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel1111_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel1111_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel112_OnClick" name="JGLabel112_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q11="http://www.w3.org/2001/XMLSchema" p9:type="q11:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form7","windowName":"查看计算公式页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q12="http://www.w3.org/2001/XMLSchema" p9:type="q12:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel112_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel112_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGLabel113_OnClick" name="JGLabel113_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q13="http://www.w3.org/2001/XMLSchema" p9:type="q13:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form5","windowName":"关于页（版本）","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q14="http://www.w3.org/2001/XMLSchema" p9:type="q14:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form4.JGLabel113_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form4","ruleSetCode": "JGLabel113_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+            </logics>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions />
+        </window>
+        <window type="1" code="form5" name="关于页（版本）" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Height">532</property>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">关于页（版本）</property>
+                <property code="RefResources" />
+                <property code="Code">form5</property>
+            </propertys>
+            <controls>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">412</property>
+                        <property code="ImageObject">Fileno_5</property>
+                        <property code="ImageValue">Fileno_5.png</property>
+                        <property code="Left">124</property>
+                        <property code="MultiHeight">412px</property>
+                        <property code="MultiWidth">670px</property>
+                        <property code="PercentHeight">77.4%</property>
+                        <property code="PercentWidth">69.8%</property>
+                        <property code="Top">3</property>
+                        <property code="Width">670</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics />
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions />
+        </window>
+        <window type="1" code="form6" name="功能介绍页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">功能介绍页</property>
+                <property code="RefResources" />
+                <property code="Code">form6</property>
+            </propertys>
+            <controls>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">406</property>
+                        <property code="ImageObject">Fileno_6</property>
+                        <property code="ImageValue">Fileno_6.png</property>
+                        <property code="Left">218</property>
+                        <property code="MultiHeight">406px</property>
+                        <property code="MultiWidth">483px</property>
+                        <property code="PercentHeight">90.2%</property>
+                        <property code="PercentWidth">50.3%</property>
+                        <property code="Top">21</property>
+                        <property code="Width">483</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics />
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions />
+        </window>
+        <window type="1" code="form10" name="查看结果页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">查看结果页</property>
+                <property code="RefResources" />
+                <property code="Code">form10</property>
+            </propertys>
+            <controls>
+                <control code="JGButton3" name="将Excel表导入到数据库" type="JGButton">
+                    <propertys>
+                        <property code="Code">JGButton3</property>
+                        <property code="Height">32</property>
+                        <property code="LabelText">将Excel表导入到数据库</property>
+                        <property code="Left">431</property>
+                        <property code="MultiHeight">32px</property>
+                        <property code="MultiWidth">156px</property>
+                        <property code="PercentHeight">7.1%</property>
+                        <property code="PercentWidth">16.2%</property>
+                        <property code="TabIndex">10</property>
+                        <property code="Top">342</property>
+                        <property code="Width">156</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form10.JGButton3_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGButton2" name="将数据导出到Excel" type="JGButton">
+                    <propertys>
+                        <property code="Code">JGButton2</property>
+                        <property code="Height">32</property>
+                        <property code="LabelText">将数据导出到Excel</property>
+                        <property code="Left">258</property>
+                        <property code="MultiHeight">32px</property>
+                        <property code="MultiWidth">131px</property>
+                        <property code="PercentHeight">7.1%</property>
+                        <property code="PercentWidth">13.6%</property>
+                        <property code="TabIndex">9</property>
+                        <property code="Top">342</property>
+                        <property code="Width">131</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form10.JGButton2_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGDataGrid2" name="列表" type="JGDataGrid">
+                    <propertys>
+                        <property code="Code">JGDataGrid2</property>
+                        <property code="Height">259</property>
+                        <property code="LabelText">列表</property>
+                        <property code="Left">495</property>
+                        <property code="MultiHeight">259px</property>
+                        <property code="MultiWidth">343px</property>
+                        <property code="PercentHeight">57.6%</property>
+                        <property code="PercentWidth">35.7%</property>
+                        <property code="TabIndex">6</property>
+                        <property code="Top">53</property>
+                        <property code="Width">343</property>
+                    </propertys>
+                    <controls>
+                        <control code="JGFloatBoxColumngpa" name="绩点" type="JGFloatBoxColumn">
+                            <propertys>
+                                <property code="Code">JGFloatBoxColumngpa</property>
+                                <property code="LabelText">绩点</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>GPA</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">gpa</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGLongDateTimePickerColumnstudy_data" name="日期" type="JGLongDateTimePickerColumn">
+                            <propertys>
+                                <property code="Code">JGLongDateTimePickerColumnstudy_data</property>
+                                <property code="LabelText">日期</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>GPA</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">study_data</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </controls>
+                    <headerControls>
+                        <control code="JGToolbar1" type="JGToolbar">
+                            <propertys>
+                                <property code="Code">JGToolbar1</property>
+                            </propertys>
+                            <controls />
+                            <events />
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </headerControls>
+                    <events>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnRecordIndexChanged" name="记录切换事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDoubleClick" name="双击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDataChanged" name="数据变化事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnSelectionChanged" name="记录选择变更">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>GPA</dataSource>
+                            <dataMembers>
+                                <dataMember name="分组字段" code="GroupByFieldName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGDataGrid1" name="列表" type="JGDataGrid">
+                    <propertys>
+                        <property code="Code">JGDataGrid1</property>
+                        <property code="Height">259</property>
+                        <property code="LabelText">列表</property>
+                        <property code="Left">97</property>
+                        <property code="MultiHeight">259px</property>
+                        <property code="MultiWidth">402px</property>
+                        <property code="PercentHeight">57.6%</property>
+                        <property code="PercentWidth">41.9%</property>
+                        <property code="TabIndex">2</property>
+                        <property code="Top">53</property>
+                        <property code="Width">402</property>
+                    </propertys>
+                    <controls>
+                        <control code="JGTextBoxColumncourse" name="课程名" type="JGTextBoxColumn">
+                            <propertys>
+                                <property code="Code">JGTextBoxColumncourse</property>
+                                <property code="LabelText">课程名</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">course</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGIntegerBoxColumncredit" name="学分" type="JGIntegerBoxColumn">
+                            <propertys>
+                                <property code="Code">JGIntegerBoxColumncredit</property>
+                                <property code="LabelText">学分</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">credit</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGIntegerBoxColumnscore" name="成绩" type="JGIntegerBoxColumn">
+                            <propertys>
+                                <property code="Code">JGIntegerBoxColumnscore</property>
+                                <property code="LabelText">成绩</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">score</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </controls>
+                    <headerControls>
+                        <control code="JGToolbar2" type="JGToolbar">
+                            <propertys>
+                                <property code="Code">JGToolbar2</property>
+                            </propertys>
+                            <controls />
+                            <events />
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </headerControls>
+                    <events>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnRecordIndexChanged" name="记录切换事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDoubleClick" name="双击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDataChanged" name="数据变化事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnSelectionChanged" name="记录选择变更">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>Worksheet</dataSource>
+                            <dataMembers>
+                                <dataMember name="分组字段" code="GroupByFieldName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel1" name="你的历史GPA：" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel1</property>
+                        <property code="LabelText">你的历史GPA：</property>
+                        <property code="Left">97</property>
+                        <property code="MultiHeight">24px</property>
+                        <property code="MultiWidth">134px</property>
+                        <property code="PercentHeight">5.3%</property>
+                        <property code="PercentWidth">14%</property>
+                        <property code="Top">4</property>
+                        <property code="Width">134</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGButton1" name="清空数据库记录" type="JGButton">
+                    <propertys>
+                        <property code="Code">JGButton1</property>
+                        <property code="Height">32</property>
+                        <property code="LabelText">清空数据库记录</property>
+                        <property code="Left">97</property>
+                        <property code="MultiHeight">32px</property>
+                        <property code="MultiWidth">114px</property>
+                        <property code="PercentHeight">7.1%</property>
+                        <property code="PercentWidth">11.9%</property>
+                        <property code="TabIndex">4</property>
+                        <property code="Top">342</property>
+                        <property code="Width">114</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form10.JGButton1_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule code="study.form10.form10_FormLoadAction" />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="form10_FormLoadAction" name="form10_窗体加载事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q15="http://www.w3.org/2001/XMLSchema" p9:type="q15:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity1" /&gt;&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity2" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Worksheet","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"Worksheet.course","sourceName":"Worksheet.course","type":"entityField"},{"destName":"Worksheet.credit","sourceName":"Worksheet.credit","type":"entityField"},{"destName":"Worksheet.score","sourceName":"Worksheet.score","type":"entityField"}],"orderBy":null,"sourceName":"Worksheet","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity2" instanceName="从数据库获取数据到实体_1" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":false,"itemqueryparam":null,"items":[{"destName":"GPA.gpa","sourceName":"GPA.gpa","type":"entityField"},{"destName":"GPA.study_data","sourceName":"GPA.study_data","type":"entityField"}],"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q16="http://www.w3.org/2001/XMLSchema" p9:type="q16:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity1" /&gt;&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity2" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form10.form10_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form10","ruleSetCode": "form10_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton1_OnClick" name="清空记录_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q17="http://www.w3.org/2001/XMLSchema" p9:type="q17:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteConditionRelationData1" /&gt;&lt;evaluateRule code="BR_DeleteConditionRelationData2" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition />
+                                    <ruleConfig>{"dtChileMaps":[{"orderNo":"1","tableName":"Worksheet","dsWhere":null}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData2" instanceName="删除数据库中的记录_1" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition />
+                                    <ruleConfig>{"dtChileMaps":[{"orderNo":"1","tableName":"GPA","dsWhere":null}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"清除数据成功！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q18="http://www.w3.org/2001/XMLSchema" p9:type="q18:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteConditionRelationData1" /&gt;&lt;evaluateRule code="BR_DeleteConditionRelationData2" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form10.JGButton1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form10","ruleSetCode": "JGButton1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton2_OnClick" name="JGButton2_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q19="http://www.w3.org/2001/XMLSchema" p9:type="q19:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ExportDataToExcel1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="ExportDataToExcel" ruleName="导出数据库数据到Excel" instanceCode="BR_ExportDataToExcel1" instanceName="导出数据库数据到Excel" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"defaultFileName":"\"成绩表\"","fileType":"xlsx","items":[{"sheetName":"\"各学科成绩表\"","dataSource":"Worksheet","dataSourceType":"Table","filterCondition":null,"queryParam":null,"mapping":[{"fieldCode":"course","excelColName":"课程名","exportData":true,"orderType":""},{"fieldCode":"credit","excelColName":"学分","exportData":true,"orderType":""},{"fieldCode":"score","excelColName":"成绩","exportData":true,"orderType":""}]},{"sheetName":"\"历来绩点\"","dataSource":"GPA","dataSourceType":"Table","filterCondition":null,"queryParam":null,"mapping":[{"fieldCode":"gpa","excelColName":"绩点","exportData":true,"orderType":""},{"fieldCode":"study_data","excelColName":"日期","exportData":true,"orderType":""}]}]}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q20="http://www.w3.org/2001/XMLSchema" p9:type="q20:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ExportDataToExcel1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form10.JGButton2_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form10","ruleSetCode": "JGButton2_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton3_OnClick" name="将Excel表导入到数据库_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q21="http://www.w3.org/2001/XMLSchema" p9:type="q21:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ImportExcelToDB1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="ImportExcelToDB" ruleName="Excel导入到数据库表" instanceCode="BR_ImportExcelToDB1" instanceName="Excel导入到数据库表" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition />
+                                    <ruleConfig>{"fileSource":"","items":[{"targetTable":"Worksheet","sheetNum":"0","dataStartRow":"2","importNodeId":"","mapping":[{"fieldCode":"course","fieldName":"课程名","sourceType":"excelColName","sourceValue":""},{"fieldCode":"credit","fieldName":"学分","sourceType":"excelColName","sourceValue":""},{"fieldCode":"score","fieldName":"成绩","sourceType":"excelColName","sourceValue":""}]},{"targetTable":"GPA","sheetNum":"1","dataStartRow":"2","importNodeId":"","mapping":[{"fieldCode":"gpa","fieldName":"绩点","sourceType":"excelColName","sourceValue":""},{"fieldCode":"study_data","fieldName":"日期","sourceType":"excelColName","sourceValue":""}]}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q22="http://www.w3.org/2001/XMLSchema" p9:type="q22:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ImportExcelToDB1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form10.JGButton3_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form10","ruleSetCode": "JGButton3_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="GPA" name="GPA" chineseName="绩点结果" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="gpa" name="gpa" chineseName="绩点" type="number" length="50" precision="4" defaultValue="" formatType="">
+                            <expression />
+                        </entityField>
+                        <entityField code="study_data" name="study_data" chineseName="日期" type="longDate" length="" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+                <entity code="Worksheet" name="Worksheet" chineseName="计算表" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="course" name="course" chineseName="课程名" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="score" name="score" chineseName="成绩" type="integer" length="50" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="credit" name="credit" chineseName="学分" type="integer" length="50" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions>
+                <expression content="&quot;清除数据成功！&quot;" type="client">
+                    <IsEnabled xmlns:q23="http://www.w3.org/2001/XMLSchema" p7:type="q23:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;成绩表&quot;" type="client">
+                    <IsEnabled xmlns:q24="http://www.w3.org/2001/XMLSchema" p7:type="q24:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;各学科成绩表&quot;" type="client">
+                    <IsEnabled xmlns:q25="http://www.w3.org/2001/XMLSchema" p7:type="q25:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;历来绩点&quot;" type="client">
+                    <IsEnabled xmlns:q26="http://www.w3.org/2001/XMLSchema" p7:type="q26:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="0" type="client">
+                    <IsEnabled xmlns:q27="http://www.w3.org/2001/XMLSchema" p7:type="q27:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="1" type="client">
+                    <IsEnabled xmlns:q28="http://www.w3.org/2001/XMLSchema" p7:type="q28:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+            </expressions>
+        </window>
+        <window type="1" code="form7" name="查看计算公式页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">查看计算公式页</property>
+                <property code="RefResources" />
+                <property code="Code">form7</property>
+            </propertys>
+            <controls>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">396</property>
+                        <property code="ImageObject">Fileno_7</property>
+                        <property code="ImageValue">Fileno_7.png</property>
+                        <property code="Left">98</property>
+                        <property code="MultiHeight">396px</property>
+                        <property code="MultiWidth">738px</property>
+                        <property code="PercentHeight">88%</property>
+                        <property code="PercentWidth">76.9%</property>
+                        <property code="Top">15</property>
+                        <property code="Width">738</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics />
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions />
+        </window>
+        <window type="1" code="form3" name="注册页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Height">493</property>
+                <property code="Width">970</property>
+                <property code="BackColor"></property>
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">注册页</property>
+                <property code="RefResources"></property>
+                <property code="Code">form3</property>
+            </propertys>
+            <controls>
+                <control code="JGLabel13" name="copyright  by Eli Bi" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel13</property>
+                        <property code="ForeColor">255, 0, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">copyright  by Eli Bi</property>
+                        <property code="Left">417</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">134px</property>
+                        <property code="PercentHeight">4.5%</property>
+                        <property code="PercentWidth">13.8%</property>
+                        <property code="Top">362</property>
+                        <property code="Width">134</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">139</property>
+                        <property code="ImageObject">Fileno_8</property>
+                        <property code="ImageValue">Fileno_8.png</property>
+                        <property code="Left">156</property>
+                        <property code="MultiHeight">139px</property>
+                        <property code="MultiWidth">179px</property>
+                        <property code="PercentHeight">28.2%</property>
+                        <property code="PercentWidth">18.5%</property>
+                        <property code="TabIndex">4</property>
+                        <property code="Top">96</property>
+                        <property code="Width">179</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName"></dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel1" name="欢迎注册5分制计算器" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel1</property>
+                        <property code="LabelText">欢迎注册5分制计算器</property>
+                        <property code="Left">372</property>
+                        <property code="MultiHeight">24px</property>
+                        <property code="MultiWidth">138px</property>
+                        <property code="PercentHeight">4.9%</property>
+                        <property code="PercentWidth">14.2%</property>
+                        <property code="Top">96</property>
+                        <property code="Width">138</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGPassword1" name="密码" type="JGPassword">
+                    <propertys>
+                        <property code="Code">JGPassword1</property>
+                        <property code="IsMust">True</property>
+                        <property code="LabelText">密码</property>
+                        <property code="Left">316</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">5.3%</property>
+                        <property code="PercentWidth">24.2%</property>
+                        <property code="TabIndex">1</property>
+                        <property code="TextLength">255</property>
+                        <property code="Top">201</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>stu_enroll</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">pass_Word</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGTextBox1" name="学号" type="JGTextBox">
+                    <propertys>
+                        <property code="Code">JGTextBox1</property>
+                        <property code="IsMust">True</property>
+                        <property code="LabelText">学号</property>
+                        <property code="Left">316</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">5.3%</property>
+                        <property code="PercentWidth">24.2%</property>
+                        <property code="TabIndex">2</property>
+                        <property code="Top">135</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>stu_enroll</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">stuNo</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGRadioGroup1" name="性别" type="JGRadioGroup">
+                    <propertys>
+                        <property code="Code">JGRadioGroup1</property>
+                        <property code="DropDownSource">{"DataSourceSetting":{"DataConfig":{"DefaultSaveColumn":null,"DefaultShowColumn":null,"SourceType":null,"SourceID":null,"SourceName":null,"MapTable":null,"SaveColumn":null,"ShowColumn":null,"SortField":null,"SortType":null,"DescColumn":null,"StatusColumn":null,"MaxRecCount":0,"QueryField":null,"QueryMethod":null,"IsPickListFields":false,"ApiOutputVar":null,"ConstData":[{"id":"男","text":"男","selected":"False"},{"id":"女","text":"女","selected":"False"}],"SqlQueryConstData":null,"EntityConstData":null,"Condition":null,"QueryParam":null,"PickListFields":null,"InvokeApiParams":null},"DataSourceType":"CustomConst"}}</property>
+                        <property code="IsMust">True</property>
+                        <property code="LabelText">性别</property>
+                        <property code="Left">316</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">5.3%</property>
+                        <property code="PercentWidth">24.2%</property>
+                        <property code="TabIndex">4</property>
+                        <property code="Top">168</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>stu_enroll</dataSource>
+                            <dataMembers>
+                                <dataMember name="标识字段" code="IDColumnName">gender</dataMember>
+                                <dataMember name="显示字段" code="ColumnName"></dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGButton1" name="注册" type="JGButton">
+                    <propertys>
+                        <property code="Code">JGButton1</property>
+                        <property code="Height">32</property>
+                        <property code="LabelText">注册</property>
+                        <property code="Left">451</property>
+                        <property code="MultiHeight">32px</property>
+                        <property code="MultiWidth">59px</property>
+                        <property code="PercentHeight">6.5%</property>
+                        <property code="PercentWidth">6.1%</property>
+                        <property code="TabIndex">5</property>
+                        <property code="Top">244</property>
+                        <property code="Width">59</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule code="study.form3.JGButton1_OnClick" />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton1_OnClick" name="JGButton1_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q29="http://www.w3.org/2001/XMLSchema" p9:type="q29:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;if&gt;    &lt;define&gt;      &lt;expression&gt;(CC.JGTextBox1.Value=="")||(CC.JGPassword1.Value=="")&lt;/expression&gt;    &lt;/define&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_ShowMessage2" /&gt;      &lt;evaluateRule code="BR_AbortRule1" /&gt;    &lt;/sequence&gt;  &lt;/if&gt;  &lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;&lt;evaluateRule code="BR_AddTableRecord1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;&lt;evaluateRule code="BR_SelectionConfirm1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="AddDataBaseRecord" ruleName="新增数据库记录" instanceCode="BR_AddDataBaseRecord1" instanceName="新增数据库记录" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition></condition>
+                                    <ruleConfig>{"dataSourcesMapping":[{"dataMap":[{"colName":"stu_enroll.gender","colValue":"CC.JGRadioGroup1.Value","valueType":"expression"},{"colName":"stu_enroll.pass_Word","colValue":"CC.JGPassword1.Value","valueType":"expression"},{"colName":"stu_enroll.stuNo","colValue":"CC.JGTextBox1.Value","valueType":"expression"}],"dataSource":"stu_enroll"}]}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"AddLocation":"2","Mappings":[{"destField":"stu_enroll.gender","fieldtype":"expression","srcField":"CC.JGRadioGroup1.Value"},{"destField":"stu_enroll.pass_Word","fieldtype":"expression","srcField":"CC.JGPassword1.Value"},{"destField":"stu_enroll.stuNo","fieldtype":"expression","srcField":"CC.JGTextBox1.Value"}],"TableType":"window","TableName":"stu_enroll","NumCount":"1"}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"注册成功！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="SelectionConfirm" ruleName="退出窗体" instanceCode="BR_SelectionConfirm1" instanceName="退出窗体" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"SelectionConfirm":"1"}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage2" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"注册失败\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="AbortRule" ruleName="中断规则" instanceCode="BR_AbortRule1" instanceName="中断规则" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"abortType":"GLOBAL","msgnote":""}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q30="http://www.w3.org/2001/XMLSchema" p9:type="q30:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;if&gt;    &lt;define&gt;      &lt;expression&gt;(CC.JGTextBox1.Value=="")||(CC.JGPassword1.Value=="")&lt;/expression&gt;    &lt;/define&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_ShowMessage2" /&gt;      &lt;evaluateRule code="BR_AbortRule1" /&gt;    &lt;/sequence&gt;  &lt;/if&gt;  &lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;&lt;evaluateRule code="BR_AddTableRecord1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;&lt;evaluateRule code="BR_SelectionConfirm1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form3.JGButton1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form3","ruleSetCode": "JGButton1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton2_OnClick" name="JGButton2_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q31="http://www.w3.org/2001/XMLSchema" p9:type="q31:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteConditionRelationData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="DeleteConditionRelationData" ruleName="删除数据库中的记录" instanceCode="BR_DeleteConditionRelationData1" instanceName="删除数据库中的记录" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition></condition>
+                                    <ruleConfig>{"dtChileMaps":[{"orderNo":"1","tableName":"stu_enroll","dsWhere":null}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q32="http://www.w3.org/2001/XMLSchema" p9:type="q32:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteConditionRelationData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="stu_enroll" name="stu_enroll" chineseName="注册表" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="stuNo" name="stuNo" chineseName="学号" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="pass_Word" name="pass_Word" chineseName="密码" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="gender" name="gender" chineseName="性别" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions>
+                <expression content="(CC.JGTextBox1.Value==&quot;&quot;)||(CC.JGPassword1.Value==&quot;&quot;)" type="client">
+                    <IsEnabled xmlns:q33="http://www.w3.org/2001/XMLSchema" p7:type="q33:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="CC.JGRadioGroup1.Value" type="client">
+                    <IsEnabled xmlns:q34="http://www.w3.org/2001/XMLSchema" p7:type="q34:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="CC.JGPassword1.Value" type="client">
+                    <IsEnabled xmlns:q35="http://www.w3.org/2001/XMLSchema" p7:type="q35:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="CC.JGTextBox1.Value" type="client">
+                    <IsEnabled xmlns:q36="http://www.w3.org/2001/XMLSchema" p7:type="q36:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="1" type="client">
+                    <IsEnabled xmlns:q37="http://www.w3.org/2001/XMLSchema" p7:type="q37:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;注册成功！&quot;" type="client">
+                    <IsEnabled xmlns:q38="http://www.w3.org/2001/XMLSchema" p7:type="q38:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;注册失败&quot;" type="client">
+                    <IsEnabled xmlns:q39="http://www.w3.org/2001/XMLSchema" p7:type="q39:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+            </expressions>
+        </window>
+        <window type="1" code="form1" name="登录页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Height">557</property>
+                <property code="BackColor" />
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">登录页</property>
+                <property code="RefResources" />
+                <property code="Code">form1</property>
+            </propertys>
+            <controls>
+                <control code="JGLabel13" name="copyright  by Eli Bi" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel13</property>
+                        <property code="ForeColor">255, 0, 0</property>
+                        <property code="Height">22</property>
+                        <property code="LabelText">copyright  by Eli Bi</property>
+                        <property code="Left">438</property>
+                        <property code="MultiHeight">22px</property>
+                        <property code="MultiWidth">134px</property>
+                        <property code="PercentHeight">3.9%</property>
+                        <property code="PercentWidth">14%</property>
+                        <property code="Top">439</property>
+                        <property code="Width">134</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGImage1" type="JGImage">
+                    <propertys>
+                        <property code="Code">JGImage1</property>
+                        <property code="Height">139</property>
+                        <property code="ImageObject">Fileno_8</property>
+                        <property code="ImageValue">Fileno_8.png</property>
+                        <property code="Left">154</property>
+                        <property code="MultiHeight">139px</property>
+                        <property code="MultiWidth">179px</property>
+                        <property code="PercentHeight">25%</property>
+                        <property code="PercentWidth">18.6%</property>
+                        <property code="TabIndex">4</property>
+                        <property code="Top">104</property>
+                        <property code="Width">179</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName" />
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGButtonGroup1" type="JGButtonGroup">
+                    <propertys>
+                        <property code="Code">JGButtonGroup1</property>
+                        <property code="Height">32</property>
+                        <property code="Left">477</property>
+                        <property code="MultiHeight">32px</property>
+                        <property code="MultiWidth">259px</property>
+                        <property code="PercentHeight">5.7%</property>
+                        <property code="PercentWidth">27%</property>
+                        <property code="Top">241</property>
+                        <property code="Width">259</property>
+                    </propertys>
+                    <controls>
+                        <control code="JGButtonGroupItem1" name="登录" type="JGButtonGroupItem">
+                            <propertys>
+                                <property code="Code">JGButtonGroupItem1</property>
+                                <property code="LabelText">登录</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnClick" name="单击事件">
+                                    <evaluateRule code="study.form1.JGButtonGroupItem1_OnClick" />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGButtonGroupItem2" name="未注册" type="JGButtonGroupItem">
+                            <propertys>
+                                <property code="Code">JGButtonGroupItem2</property>
+                                <property code="LabelText">未注册</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnClick" name="单击事件">
+                                    <evaluateRule code="study.form1.JGButtonGroupItem2_OnClick" />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </controls>
+                    <events />
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGLabel1" name="欢迎登录5分制计算器" type="JGLabel">
+                    <propertys>
+                        <property code="Code">JGLabel1</property>
+                        <property code="LabelText">欢迎登录5分制计算器</property>
+                        <property code="Left">384</property>
+                        <property code="MultiHeight">24px</property>
+                        <property code="MultiWidth">138px</property>
+                        <property code="PercentHeight">4.3%</property>
+                        <property code="PercentWidth">14.4%</property>
+                        <property code="Top">104</property>
+                        <property code="Width">138</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGTextBox1" name="学号" type="JGTextBox">
+                    <propertys>
+                        <property code="Code">JGTextBox1</property>
+                        <property code="IsMust">True</property>
+                        <property code="LabelText">学号</property>
+                        <property code="LabelWidth">70</property>
+                        <property code="Left">362</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">4.7%</property>
+                        <property code="PercentWidth">24.5%</property>
+                        <property code="TabIndex">1</property>
+                        <property code="Top">147</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>stu_enroll</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">stuNo</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGPassword1" name="密码" type="JGPassword">
+                    <propertys>
+                        <property code="Code">JGPassword1</property>
+                        <property code="IsMust">True</property>
+                        <property code="LabelText">密码</property>
+                        <property code="LabelWidth">70</property>
+                        <property code="Left">362</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">4.7%</property>
+                        <property code="PercentWidth">24.5%</property>
+                        <property code="TabIndex">0</property>
+                        <property code="TextLength">255</property>
+                        <property code="Top">194</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>stu_enroll</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">pass_Word</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButtonGroupItem1_OnClick" name="JGButtonGroupItem1_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q40="http://www.w3.org/2001/XMLSchema" p9:type="q40:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CheckUnique1" /&gt;&lt;if&gt;    &lt;define&gt;      &lt;expression&gt;BR_OUT.BR_CheckUnique1.isUnique==True&lt;/expression&gt;    &lt;/define&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_ShowMessage1_1" /&gt;    &lt;/sequence&gt;  &lt;/if&gt;  &lt;else&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;      &lt;evaluateRule code="BR_ShowMessage1" /&gt;      &lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;    &lt;/sequence&gt;  &lt;/else&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="CheckUnique" ruleName="前后台唯一性检查" instanceCode="BR_CheckUnique1" instanceName="前后台唯一性检查" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"isBackgroudCheck":true,"entityName":"stu_enroll","tableName":"stu_enroll","isAutoSelectRepeatRow":true,"checkFields":[{"entityFiled":"stu_enroll.gender","tableField":"stu_enroll.gender"},{"entityFiled":"stu_enroll.pass_Word","tableField":"stu_enroll.pass_Word"},{"entityFiled":"stu_enroll.stuNo","tableField":"stu_enroll.stuNo"}],"dsWhere":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="AddDataBaseRecord" ruleName="新增数据库记录" instanceCode="BR_AddDataBaseRecord1" instanceName="新增数据库记录" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition />
+                                    <ruleConfig>{"dataSourcesMapping":[{"dataMap":[{"colName":"stu_register.pass_Word","colValue":"CC.JGPassword1.Value","valueType":"expression"},{"colName":"stu_register.stuNo","colValue":"CC.JGTextBox1.Value","valueType":"expression"}],"dataSource":"stu_register"}]}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"登录成功！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form4","windowName":"主页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"currentWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1_1" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"登录失败！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q41="http://www.w3.org/2001/XMLSchema" p9:type="q41:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CheckUnique1" /&gt;&lt;if&gt;    &lt;define&gt;      &lt;expression&gt;BR_OUT.BR_CheckUnique1.isUnique==True&lt;/expression&gt;    &lt;/define&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_ShowMessage1_1" /&gt;    &lt;/sequence&gt;  &lt;/if&gt;  &lt;else&gt;    &lt;sequence&gt;      &lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;      &lt;evaluateRule code="BR_ShowMessage1" /&gt;      &lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;    &lt;/sequence&gt;  &lt;/else&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form1.JGButtonGroupItem1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form1","ruleSetCode": "JGButtonGroupItem1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButtonGroupItem2_OnClick" name="JGButtonGroupItem2_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q42="http://www.w3.org/2001/XMLSchema" p9:type="q42:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition />
+                                    <ruleConfig>{"openType":"appoint","windowCode":"form3","windowName":"注册页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":[{"destType":"control","dest":"JGTextBox1","srcType":"expression","src":"[stu_enroll].[stuNo]","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null},{"destType":"control","dest":"JGPassword1","srcType":"expression","src":"[stu_enroll].[pass_Word]","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null}]}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q43="http://www.w3.org/2001/XMLSchema" p9:type="q43:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_OpenComponentReturnData1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form1.JGButtonGroupItem2_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition />
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form1","ruleSetCode": "JGButtonGroupItem2_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="stu_register" name="stu_register" chineseName="登录页" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="stuNo" name="stuNo" chineseName="学号" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="pass_Word" name="pass_Word" chineseName="密码" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+                <entity code="stu_enroll" name="stu_enroll" chineseName="注册表" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="stuNo" name="stuNo" chineseName="学号" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="pass_Word" name="pass_Word" chineseName="密码" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                        <entityField code="gender" name="gender" chineseName="性别" type="char" length="255" precision="" defaultValue="">
+                            <expression />
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions>
+                <expression content="[stu_enroll].[stuNo]" type="client">
+                    <IsEnabled xmlns:q44="http://www.w3.org/2001/XMLSchema" p7:type="q44:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="[stu_enroll].[pass_Word]" type="client">
+                    <IsEnabled xmlns:q45="http://www.w3.org/2001/XMLSchema" p7:type="q45:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="BR_OUT.BR_CheckUnique1.isUnique==True" type="client">
+                    <IsEnabled xmlns:q46="http://www.w3.org/2001/XMLSchema" p7:type="q46:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="CC.JGPassword1.Value" type="client">
+                    <IsEnabled xmlns:q47="http://www.w3.org/2001/XMLSchema" p7:type="q47:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="CC.JGTextBox1.Value" type="client">
+                    <IsEnabled xmlns:q48="http://www.w3.org/2001/XMLSchema" p7:type="q48:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;登录成功！&quot;" type="client">
+                    <IsEnabled xmlns:q49="http://www.w3.org/2001/XMLSchema" p7:type="q49:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;登录失败！&quot;" type="client">
+                    <IsEnabled xmlns:q50="http://www.w3.org/2001/XMLSchema" p7:type="q50:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+            </expressions>
+        </window>
+        <window type="1" code="form9" name="计算器页" desc="" version="1" platformVersion="3" isExtendable="false">
+            <propertys>
+                <property code="Height">494</property>
+                <property code="BackColor"></property>
+                <property code="Padding">0, 0, 0, 0</property>
+                <property code="Name">计算器页</property>
+                <property code="RefResources"></property>
+                <property code="Code">form9</property>
+            </propertys>
+            <controls>
+                <control code="JGDataGrid1" name="列表" type="JGDataGrid">
+                    <propertys>
+                        <property code="Code">JGDataGrid1</property>
+                        <property code="Height">232</property>
+                        <property code="LabelText">列表</property>
+                        <property code="MultiHeight">232px</property>
+                        <property code="MultiWidth">960px</property>
+                        <property code="PercentHeight">47%</property>
+                        <property code="PercentWidth">100%</property>
+                        <property code="ShowToolbar">True</property>
+                        <property code="TabIndex">0</property>
+                        <property code="Width">960</property>
+                    </propertys>
+                    <controls>
+                        <control code="JGTextBoxColumncourse" name="课程名" type="JGTextBoxColumn">
+                            <propertys>
+                                <property code="Code">JGTextBoxColumncourse</property>
+                                <property code="LabelText">课程名</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">course</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGIntegerBoxColumnscore" name="成绩" type="JGIntegerBoxColumn">
+                            <propertys>
+                                <property code="Code">JGIntegerBoxColumnscore</property>
+                                <property code="LabelText">成绩</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">score</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGIntegerBoxColumncredit" name="学分" type="JGIntegerBoxColumn">
+                            <propertys>
+                                <property code="Code">JGIntegerBoxColumncredit</property>
+                                <property code="LabelText">学分</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule code="study.form9.JGIntegerBoxColumnscore_OnValueChanged" />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">credit</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGIntegerBoxColumndanxuefen" name="单学分绩点" type="JGIntegerBoxColumn">
+                            <propertys>
+                                <property code="Code">JGIntegerBoxColumndanxuefen</property>
+                                <property code="LabelText">单学分绩点</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnValueChanged" name="值改变事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnClick" name="链接事件">
+                                    <evaluateRule />
+                                </event>
+                                <event code="OnCellDoubleClick" name="双击事件">
+                                    <evaluateRule />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataSource>Worksheet</dataSource>
+                                    <dataMembers>
+                                        <dataMember name="字段名称" code="ColumnName">danxuefen</dataMember>
+                                    </dataMembers>
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </controls>
+                    <headerControls>
+                        <control code="JGToolbar1" type="JGToolbar">
+                            <propertys>
+                                <property code="Code">JGToolbar1</property>
+                                <property code="Width">958</property>
+                            </propertys>
+                            <controls>
+                                <control code="JGToolbarMenu1" name="新增" type="JGToolbarMenu">
+                                    <propertys>
+                                        <property code="Code">JGToolbarMenu1</property>
+                                        <property code="DisplayStyle">ImageAndText</property>
+                                        <property code="Icon">add</property>
+                                        <property code="LabelText">新增</property>
+                                        <property code="Left">8</property>
+                                        <property code="Top">4</property>
+                                        <property code="Type">add</property>
+                                        <property code="Width">50</property>
+                                    </propertys>
+                                    <controls />
+                                    <events>
+                                        <event code="OnClick" name="单击事件">
+                                            <evaluateRule code="study.form9.JGToolbarMenu1_OnClick" />
+                                        </event>
+                                    </events>
+                                    <dataBindings>
+                                        <dataBinding>
+                                            <dataMembers />
+                                        </dataBinding>
+                                    </dataBindings>
+                                </control>
+                                <control code="JGToolbarMenu2" name="删除" type="JGToolbarMenu">
+                                    <propertys>
+                                        <property code="Code">JGToolbarMenu2</property>
+                                        <property code="DisplayStyle">ImageAndText</property>
+                                        <property code="Icon">delete</property>
+                                        <property code="LabelText">删除</property>
+                                        <property code="Left">66</property>
+                                        <property code="Top">4</property>
+                                        <property code="Type">delete</property>
+                                        <property code="Width">50</property>
+                                    </propertys>
+                                    <controls />
+                                    <events>
+                                        <event code="OnClick" name="单击事件">
+                                            <evaluateRule code="study.form9.JGToolbarMenu2_OnClick" />
+                                        </event>
+                                    </events>
+                                    <dataBindings>
+                                        <dataBinding>
+                                            <dataMembers />
+                                        </dataBinding>
+                                    </dataBindings>
+                                </control>
+                                <control code="JGToolbarMenu3" name="保存" type="JGToolbarMenu">
+                                    <propertys>
+                                        <property code="Code">JGToolbarMenu3</property>
+                                        <property code="DisplayStyle">ImageAndText</property>
+                                        <property code="Icon">save</property>
+                                        <property code="LabelText">保存</property>
+                                        <property code="Left">124</property>
+                                        <property code="Top">4</property>
+                                        <property code="Type">save</property>
+                                        <property code="Width">50</property>
+                                    </propertys>
+                                    <controls />
+                                    <events>
+                                        <event code="OnClick" name="单击事件">
+                                            <evaluateRule code="study.form9.JGToolbarMenu3_OnClick" />
+                                        </event>
+                                    </events>
+                                    <dataBindings>
+                                        <dataBinding>
+                                            <dataMembers />
+                                        </dataBinding>
+                                    </dataBindings>
+                                </control>
+                            </controls>
+                            <events />
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </headerControls>
+                    <events>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnRecordIndexChanged" name="记录切换事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnClick" name="单击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDoubleClick" name="双击事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnDataChanged" name="数据变化事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnSelectionChanged" name="记录选择变更">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>Worksheet</dataSource>
+                            <dataMembers>
+                                <dataMember name="分组字段" code="GroupByFieldName"></dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGFloatBox1" name="您的绩点为" type="JGFloatBox">
+                    <propertys>
+                        <property code="Code">JGFloatBox1</property>
+                        <property code="LabelText">您的绩点为</property>
+                        <property code="Left">32</property>
+                        <property code="MultiHeight">26px</property>
+                        <property code="MultiWidth">235px</property>
+                        <property code="PercentHeight">5.3%</property>
+                        <property code="PercentWidth">24.5%</property>
+                        <property code="TabIndex">9</property>
+                        <property code="Top">315</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>GPA</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">gpa</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+                <control code="JGGroupPanel1" type="JGGroupPanel">
+                    <propertys>
+                        <property code="Code">JGGroupPanel1</property>
+                        <property code="ContentAlignment">Horizontal</property>
+                        <property code="Height">38</property>
+                        <property code="Left">32</property>
+                        <property code="MultiHeight">38px</property>
+                        <property code="MultiWidth">193px</property>
+                        <property code="PercentHeight">7.7%</property>
+                        <property code="PercentWidth">20.1%</property>
+                        <property code="Top">257</property>
+                        <property code="Width">193</property>
+                    </propertys>
+                    <controls>
+                        <control code="JGButton2" name="初始化计算器" type="JGButton">
+                            <propertys>
+                                <property code="Code">JGButton2</property>
+                                <property code="Height">32</property>
+                                <property code="LabelText">初始化计算器</property>
+                                <property code="Left">3</property>
+                                <property code="MultiHeight">32px</property>
+                                <property code="MultiWidth">102px</property>
+                                <property code="PercentHeight">84.2%</property>
+                                <property code="PercentWidth">52.8%</property>
+                                <property code="TabIndex">10</property>
+                                <property code="Top">1</property>
+                                <property code="Width">102</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnClick" name="单击事件">
+                                    <evaluateRule code="study.form9.JGButton2_OnClick" />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                        <control code="JGButton1" name="开始计算" type="JGButton">
+                            <propertys>
+                                <property code="Code">JGButton1</property>
+                                <property code="Height">32</property>
+                                <property code="LabelText">开始计算</property>
+                                <property code="Left">111</property>
+                                <property code="MultiHeight">32px</property>
+                                <property code="MultiWidth">77px</property>
+                                <property code="PercentHeight">84.2%</property>
+                                <property code="PercentWidth">39.9%</property>
+                                <property code="TabIndex">10</property>
+                                <property code="Top">1</property>
+                                <property code="Width">77</property>
+                            </propertys>
+                            <controls />
+                            <events>
+                                <event code="OnClick" name="单击事件">
+                                    <evaluateRule code="study.form9.JGButton1_OnClick" />
+                                </event>
+                            </events>
+                            <dataBindings>
+                                <dataBinding>
+                                    <dataMembers />
+                                </dataBinding>
+                            </dataBindings>
+                        </control>
+                    </controls>
+                    <events>
+                        <event code="OnValueChanged" name="控件加载事件">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataMembers />
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="ResizeAction" name="窗体大小改变事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton1_OnClick" name="开始计算_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q51="http://www.w3.org/2001/XMLSchema" p9:type="q51:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CalculateToColumn1" /&gt;&lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="CalculateToColumn" ruleName="计算公式的值并赋值给指定字段" instanceCode="BR_CalculateToColumn1" instanceName="计算公式的值并赋值给指定字段" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"destFieldName":"GPA.gpa","formula":"(TotalColumn(\"Worksheet\",\"danxuefen\"))/(TotalColumn(\"Worksheet\",\"credit\"))"}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="AddDataBaseRecord" ruleName="新增数据库记录" instanceCode="BR_AddDataBaseRecord1" instanceName="新增数据库记录" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition></condition>
+                                    <ruleConfig>{"dataSourcesMapping":[{"dataMap":[{"colName":"GPA.gpa","colValue":"[GPA].[gpa]","valueType":"expression"},{"colName":"GPA.study_data","colValue":"DateTimeNow()","valueType":"expression"}],"dataSource":"GPA"}]}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q52="http://www.w3.org/2001/XMLSchema" p9:type="q52:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CalculateToColumn1" /&gt;&lt;evaluateRule code="BR_AddDataBaseRecord1" /&gt;&lt;evaluateRule code="BR_DataBaseDataToInterfaceEntity1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances>
+                                <ruleInstancesRuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到实体" instanceCode="BR_DataBaseDataToInterfaceEntity1" instanceName="从数据库获取数据到实体" isNeedLog="False" isEnabled="False" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"GPA","isFieldAutoMapping":true,"itemqueryparam":null,"items":null,"orderBy":null,"sourceName":"GPA","dataLoad":"","pager":[{"isPaging":false,"pageSize":"","pageNo":"","totalRecordSave":[{"isSaveTotalRecord":false,"targetType":"methodVariant","target":""}]}]}],"treeStruct":null}</ruleConfig>
+                                </ruleInstancesRuleInstance>
+                            </UnEnableuleInstances>
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGButton1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGButton1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGButton2_OnClick" name="初始化计算器_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q53="http://www.w3.org/2001/XMLSchema" p9:type="q53:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ClearInterfaceEntityData1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BR_ClearInterfaceEntityData1" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"dataSourceNames":[{"name":"Worksheet"},{"name":"GPA"}]}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"初始化成功！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q54="http://www.w3.org/2001/XMLSchema" p9:type="q54:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ClearInterfaceEntityData1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGButton2_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGButton2_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGIntegerBoxColumnscore_OnValueChanged" name="成绩_值改变事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q55="http://www.w3.org/2001/XMLSchema" p9:type="q55:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CalculateToColumn1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="CalculateToColumn" ruleName="计算公式的值并赋值给指定字段" instanceCode="BR_CalculateToColumn1" instanceName="计算公式的值并赋值给指定字段" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"destFieldName":"Worksheet.danxuefen","formula":"([Worksheet].[score]/10-5)*[Worksheet].[credit]"}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q56="http://www.w3.org/2001/XMLSchema" p9:type="q56:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_CalculateToColumn1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGIntegerBoxColumnscore_OnValueChanged" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGIntegerBoxColumnscore_OnValueChanged"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGToolbarMenu1_OnClick" name="JGToolbarMenu1_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q57="http://www.w3.org/2001/XMLSchema" p9:type="q57:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_AddTableRecord1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="AddTableRecord" ruleName="新增实体记录" instanceCode="BR_AddTableRecord1" instanceName="新增实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"AddLocation":"3","Mappings":null,"TableType":"window","TableName":"Worksheet","NumCount":"1"}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q58="http://www.w3.org/2001/XMLSchema" p9:type="q58:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_AddTableRecord1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGToolbarMenu1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGToolbarMenu1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGToolbarMenu2_OnClick" name="JGToolbarMenu2_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q59="http://www.w3.org/2001/XMLSchema" p9:type="q59:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteListSelectRow1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除实体记录" instanceCode="BR_DeleteListSelectRow1" instanceName="删除实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"Condition":"","deleteType":"0","TableName":"Worksheet","EntityType":"window"}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q60="http://www.w3.org/2001/XMLSchema" p9:type="q60:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_DeleteListSelectRow1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGToolbarMenu2_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGToolbarMenu2_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="JGToolbarMenu3_OnClick" name="JGToolbarMenu3_单击事件" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q61="http://www.w3.org/2001/XMLSchema" p9:type="q61:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_UpdateRecord1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="UpdateRecord" ruleName="保存实体到数据库" instanceCode="BR_UpdateRecord1" instanceName="保存实体到数据库" isNeedLog="False" isEnabled="True" transactionType="transaction">
+                                    <condition></condition>
+                                    <ruleConfig>{"dataSourceMap":[{"dataMap":null,"dataSource":"Worksheet","dataSourceType":"window","destTab":"Worksheet","isSaveAll":false,"isFieldAutoMapping":true}],"treeStruct":null}</ruleConfig>
+                                </ruleInstance>
+                                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"保存成功！\"","type":"1"}}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                            <extInfos />
+                            <AllRuleRoute xmlns:q62="http://www.w3.org/2001/XMLSchema" p9:type="q62:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_UpdateRecord1" /&gt;&lt;evaluateRule code="BR_ShowMessage1" /&gt;</AllRuleRoute>
+                            <UnEnableuleInstances />
+                        </ruleSet>
+                    </ruleSets>
+                    <ruleInstances>
+                        <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="study.form9.JGToolbarMenu3_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+                            <condition></condition>
+                            <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "study","windowCode": "form9","ruleSetCode": "JGToolbarMenu3_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+                        </ruleInstance>
+                    </ruleInstances>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="Worksheet" name="Worksheet" chineseName="计算表" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="course" name="course" chineseName="课程名" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="score" name="score" chineseName="成绩" type="integer" length="50" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="credit" name="credit" chineseName="学分" type="integer" length="50" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="danxuefen" name="danxuefen" chineseName="单学分绩点" type="integer" length="50" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+                <entity code="GPA" name="GPA" chineseName="绩点结果" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="128" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="gpa" name="gpa" chineseName="绩点" type="number" length="50" precision="4" defaultValue="" formatType="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="study_data" name="study_data" chineseName="日期" type="longDate" length="" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions>
+                <expression content="&quot;保存成功！&quot;" type="client">
+                    <IsEnabled xmlns:q63="http://www.w3.org/2001/XMLSchema" p7:type="q63:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="1" type="client">
+                    <IsEnabled xmlns:q64="http://www.w3.org/2001/XMLSchema" p7:type="q64:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="(TotalColumn(&quot;Worksheet&quot;,&quot;danxuefen&quot;))/(TotalColumn(&quot;Worksheet&quot;,&quot;credit&quot;))" type="client">
+                    <IsEnabled xmlns:q65="http://www.w3.org/2001/XMLSchema" p7:type="q65:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="[GPA].[gpa]" type="client">
+                    <IsEnabled xmlns:q66="http://www.w3.org/2001/XMLSchema" p7:type="q66:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="DateTimeNow()" type="client">
+                    <IsEnabled xmlns:q67="http://www.w3.org/2001/XMLSchema" p7:type="q67:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="&quot;初始化成功！&quot;" type="client">
+                    <IsEnabled xmlns:q68="http://www.w3.org/2001/XMLSchema" p7:type="q68:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+                <expression content="([Worksheet].[score]/10-5)*[Worksheet].[credit]" type="client">
+                    <IsEnabled xmlns:q69="http://www.w3.org/2001/XMLSchema" p7:type="q69:boolean" xmlns:p7="http://www.w3.org/2001/XMLSchema-instance">true</IsEnabled>
+                </expression>
+            </expressions>
+        </window>
+    </windows>
+    <logics />
+    <models>
+        <model name="GPA" isDeleted="false" code="6c09622256ef4643baae74acff9de939" desc="" chineseName="绩点结果">
+            <fields>
+                <field type="char" precision="0" fieldName="id" length="128" code="Column_id" desc="" defaultvalue="" name="" isNType="false" isNotNull="true" />
+                <field type="number" precision="4" fieldName="gpa" length="50" code="a293b2c29ecc44cc9695fac7c62938ef" desc="" defaultvalue="" name="绩点" isNType="false" />
+                <field type="longDate" precision="0" fieldName="study_data" length="50" code="0ab7d175079b450fa99a307cb95bb0c3" desc="" defaultvalue="" name="日期" isNType="false" />
+            </fields>
+            <indexes>
+                <index name="PK_1560245525" isUnique="false" isPrimaryKey="true">
+                    <indexFields>
+                        <indexField isAsc="true" indexOrder="0" fieldName="id" />
+                    </indexFields>
+                </index>
+            </indexes>
+            <records />
+        </model>
+        <model name="stu_enroll" isDeleted="false" code="c53afcd30f924a5e909d44875d7ba43f" desc="" chineseName="注册表">
+            <fields>
+                <field type="char" precision="0" fieldName="id" length="128" code="Column_id" desc="" defaultvalue="" name="" isNType="false" isNotNull="true" />
+                <field type="char" precision="0" fieldName="stuNo" length="255" code="6df6af68e8174261b320d2af28e97e23" desc="" defaultvalue="" name="学号" isNType="false" />
+                <field type="char" precision="0" fieldName="pass_Word" length="255" code="690c3530f7dd46ee9f5f04274adb15f7" desc="" defaultvalue="" name="密码" isNType="false" />
+                <field type="char" precision="0" fieldName="gender" length="255" code="3cca9db16a0c4e7a87f1a40629920d5c" desc="" defaultvalue="" name="性别" isNType="false" />
+            </fields>
+            <indexes>
+                <index name="PK_643728627" isUnique="false" isPrimaryKey="true">
+                    <indexFields>
+                        <indexField isAsc="true" indexOrder="0" fieldName="id" />
+                    </indexFields>
+                </index>
+            </indexes>
+            <records />
+        </model>
+        <model name="stu_register" isDeleted="false" code="8f91e4f7102d4014a32062960b62a6c3" desc="" chineseName="登录页">
+            <fields>
+                <field type="char" precision="0" fieldName="id" length="128" code="Column_id" desc="" defaultvalue="" name="" isNType="false" isNotNull="true" />
+                <field type="char" precision="0" fieldName="stuNo" length="255" code="acc3fa41b3db40d68eafabf624235d5a" desc="" defaultvalue="" name="学号" isNType="false" />
+                <field type="char" precision="0" fieldName="pass_Word" length="255" code="505f9e5c72ec48c4857a6893afba1bb5" desc="" defaultvalue="" name="密码" isNType="false" />
+            </fields>
+            <indexes>
+                <index name="PK_1262137755" isUnique="false" isPrimaryKey="true">
+                    <indexFields>
+                        <indexField isAsc="true" indexOrder="0" fieldName="id" />
+                    </indexFields>
+                </index>
+            </indexes>
+            <records />
+        </model>
+        <model name="Worksheet" isDeleted="false" code="87d529199518455699d10998b9a0404d" desc="" chineseName="计算表">
+            <fields>
+                <field type="char" precision="0" fieldName="id" length="128" code="Column_id" desc="" defaultvalue="" name="" isNType="false" isNotNull="true" />
+                <field type="char" precision="0" fieldName="course" length="255" code="ce3e8374f76b43e281399054155bad30" desc="" defaultvalue="" name="课程名" isNType="false" />
+                <field type="integer" precision="0" fieldName="score" length="50" code="6c544e9335f740b49036d41002082504" desc="" defaultvalue="" name="成绩" isNType="false" />
+                <field type="integer" precision="0" fieldName="credit" length="50" code="e152a74486974f73938fc7f7a779a941" desc="" defaultvalue="" name="学分" isNType="false" />
+            </fields>
+            <indexes>
+                <index name="PK_2141408553" isUnique="false" isPrimaryKey="true">
+                    <indexFields>
+                        <indexField isAsc="true" indexOrder="0" fieldName="id" />
+                    </indexFields>
+                </index>
+            </indexes>
+            <records />
+        </model>
+    </models>
+    <variants />
+    <options />
+    <querys />
+    <resourcePackages />
+    <expressions />
+    <metaInfos>
+        <metaInfo type="model">
+            <modelMetas />
+        </metaInfo>
+    </metaInfos>
+    <menuItems />
+    <resources>
+        <resource type="image" fullName="Fileno_1.jpg" fileCode="Fileno_1" isDeleted="false" hashCode="2930A7AD2EBCE912AD35D91D7F8F35AC0BCB5A5E">
+            <content>resource/Fileno_1.jpg</content>
+        </resource>
+        <resource type="image" fullName="Fileno_2.jpg" fileCode="Fileno_2" isDeleted="false" hashCode="0E122EC4AA7C0C665FBD3E6152C0CE45D8FFC80F">
+            <content>resource/Fileno_2.jpg</content>
+        </resource>
+        <resource type="image" fullName="Fileno_3.png" fileCode="Fileno_3" isDeleted="false" hashCode="B98CB281EDAC74B0FEC664C0EC7C1DC2392F29F8">
+            <content>resource/Fileno_3.png</content>
+        </resource>
+        <resource type="image" fullName="Fileno_4.jpg" fileCode="Fileno_4" isDeleted="false" hashCode="D10DBC71CDC023DED7D84703DD696791FE48825E">
+            <content>resource/Fileno_4.jpg</content>
+        </resource>
+        <resource type="image" fullName="Fileno_5.png" fileCode="Fileno_5" isDeleted="false" hashCode="75E84733D1529C5E3EB45EC18564EABB047617B2">
+            <content>resource/Fileno_5.png</content>
+        </resource>
+        <resource type="image" fullName="Fileno_6.png" fileCode="Fileno_6" isDeleted="false" hashCode="66AE264FD1437064F0D7AEC92B99C7E443563588">
+            <content>resource/Fileno_6.png</content>
+        </resource>
+        <resource type="image" fullName="Fileno_7.png" fileCode="Fileno_7" isDeleted="false" hashCode="0435ED41654CA8710B45E3E1DD416F1A6C022D5C">
+            <content>resource/Fileno_7.png</content>
+        </resource>
+        <resource type="image" fullName="Fileno_8.png" fileCode="Fileno_8" isDeleted="false" hashCode="5A2B5AE18F5E55BE3BA3B5B389BA8652AB5860DF">
+            <content>resource/Fileno_8.png</content>
+        </resource>
+    </resources>
+    <manifest>
+        <bundle-info>
+            <symbolic-name>study</symbolic-name>
+            <bundle-name>学生5分制绩点计算器</bundle-name>
+            <bundle-version>1.0.0</bundle-version>
+            <bundle-type>RuntimeSchema</bundle-type>
+            <provider>elibi</provider>
+            <description />
+            <lastModified>1717931622000</lastModified>
+            <outTableInitDatas>false</outTableInitDatas>
+        </bundle-info>
+        <interface>
+            <apis />
+            <spis />
+        </interface>
+        <dependencies />
+    </manifest>
+    <domains>
+        <module code="functional_prdaction">
+            <elements>
+                <element code="ActionManager">
+                    <config>{
+    "actionEntity": {        
+        "datas": {
+            "values": []
+        }
+    },
+    "actionWindow": {
+        "datas": {
+            "values": []
+        }
+    },
+	"actionNavigationInfo":{
+        "datas": {
+            "values": []
+        }
+	}
+}</config>
+                </element>
+            </elements>
+        </module>
+        <module code="functional_bizWindow">
+            <elements>
+                <element code="BizWindowInstance">
+                    <config>{"bizWindowInstance":[],"manifest":[]}</config>
+                </element>
+            </elements>
+        </module>
+    </domains>
+    <extendableWindows />
+    <spiInfos />
+    <annotationNotes />
+    <annotationInstances />
+</component>

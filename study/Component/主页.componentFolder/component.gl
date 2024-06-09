@@ -1,0 +1,8 @@
+﻿<Methods>
+  <Method MethodDir="ControlMethod" FileName="JGLabel1_OnClick.method" Code="JGLabel1_OnClick" Name="JGLabel1_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGLabel11_OnClick.method" Code="JGLabel11_OnClick" Name="JGLabel11_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGLabel111_OnClick.method" Code="JGLabel111_OnClick" Name="JGLabel111_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGLabel1111_OnClick.method" Code="JGLabel1111_OnClick" Name="JGLabel1111_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGLabel112_OnClick.method" Code="JGLabel112_OnClick" Name="JGLabel112_单击事件" SourceType="Common" />
+  <Method MethodDir="ControlMethod" FileName="JGLabel113_OnClick.method" Code="JGLabel113_OnClick" Name="JGLabel113_单击事件" SourceType="Common" />
+</Methods>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<NavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <NavigationNode>
+      <Code>form1</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>登录页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form3</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>注册页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form4</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>主页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form5</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>关于页（版本）</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form6</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>功能介绍页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form7</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>查看计算公式页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form8</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>GPA趋势页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form9</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>计算器页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+    <NavigationNode>
+      <Code>form10</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>查看结果页</FileSystemObjectName>
+      <SubNodes />
+      <FormEntity>
+        <DesignMode>Form</DesignMode>
+        <WindowSource />
+        <Version>1</Version>
+      </FormEntity>
+    </NavigationNode>
+  </Nodes>
+</NavigationInfo>

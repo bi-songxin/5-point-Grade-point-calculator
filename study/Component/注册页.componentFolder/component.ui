@@ -1,0 +1,38 @@
+﻿<form type="1002" code="form3" isExtendable="false" owner="elibi" platformVersion="3" version="1" IsLocked="False" lastWriteTime="2024-06-09 16:21:13Z">
+  <propertys>
+    <property name="Height"><![CDATA[493]]></property>
+    <property name="Width"><![CDATA[970]]></property>
+    <property name="MultiHeight"><![CDATA[space]]></property>
+    <property name="MultiWidth"><![CDATA[space]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="ResizeAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[注册页]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ControlDocInfo"><![CDATA[]]></property>
+    <property name="IsWindowReport"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGLabel Code="JGLabel13" LabelText="copyright  by Eli Bi" Height="22" Width="134" PercentHeight="4.5%" PercentWidth="13.8%" Top="362" Left="417" TabIndex="1" ForeColor="255, 0, 0" MultiHeight="22px" MultiWidth="134px" ThemeVar="null" />
+    <JGImage Code="JGImage1" Height="139" Width="179" PercentHeight="28.2%" PercentWidth="18.5%" Top="96" Left="156" TabIndex="4" ImageValue="Fileno_8.png" ImageObject="Fileno_8" MultiHeight="139px" MultiWidth="179px" />
+    <JGLabel Code="JGLabel1" LabelText="欢迎注册5分制计算器" Width="138" PercentHeight="4.9%" PercentWidth="14.2%" Top="96" Left="372" TabIndex="0" MultiHeight="24px" MultiWidth="138px" />
+    <JGPassword Code="JGPassword1" LabelText="密码" PercentHeight="5.3%" PercentWidth="24.2%" Top="201" Left="316" TabIndex="1" TableName="stu_enroll" ColumnName="pass_Word" TextLength="255" IsMust="True" MultiHeight="26px" MultiWidth="235px" />
+    <JGTextBox Code="JGTextBox1" LabelText="学号" PercentHeight="5.3%" PercentWidth="24.2%" Top="135" Left="316" TabIndex="2" TableName="stu_enroll" ColumnName="stuNo" IsMust="True" MultiHeight="26px" MultiWidth="235px" />
+    <JGRadioGroup Code="JGRadioGroup1" LabelText="性别" PercentHeight="5.3%" PercentWidth="24.2%" Top="168" Left="316" TabIndex="4" TableName="stu_enroll" IDColumnName="gender" DropDownSource="{&quot;DataSourceSetting&quot;:{&quot;DataConfig&quot;:{&quot;DefaultSaveColumn&quot;:null,&quot;DefaultShowColumn&quot;:null,&quot;SourceType&quot;:null,&quot;SourceID&quot;:null,&quot;SourceName&quot;:null,&quot;MapTable&quot;:null,&quot;SaveColumn&quot;:null,&quot;ShowColumn&quot;:null,&quot;SortField&quot;:null,&quot;SortType&quot;:null,&quot;DescColumn&quot;:null,&quot;StatusColumn&quot;:null,&quot;MaxRecCount&quot;:0,&quot;QueryField&quot;:null,&quot;QueryMethod&quot;:null,&quot;IsPickListFields&quot;:false,&quot;ApiOutputVar&quot;:null,&quot;ConstData&quot;:[{&quot;id&quot;:&quot;男&quot;,&quot;text&quot;:&quot;男&quot;,&quot;selected&quot;:&quot;False&quot;},{&quot;id&quot;:&quot;女&quot;,&quot;text&quot;:&quot;女&quot;,&quot;selected&quot;:&quot;False&quot;}],&quot;SqlQueryConstData&quot;:null,&quot;EntityConstData&quot;:null,&quot;Condition&quot;:null,&quot;QueryParam&quot;:null,&quot;PickListFields&quot;:null,&quot;InvokeApiParams&quot;:null},&quot;DataSourceType&quot;:&quot;CustomConst&quot;}}" IsMust="True" MultiHeight="26px" MultiWidth="235px" />
+    <JGButton Code="JGButton1" LabelText="注册" Height="32" Width="59" PercentHeight="6.5%" PercentWidth="6.1%" Top="244" Left="451" TabIndex="5" OnClick="JGButton1_OnClick" MultiHeight="32px" MultiWidth="59px" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+  <annotationInfo><![CDATA[]]></annotationInfo>
+</form>

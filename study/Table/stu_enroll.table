@@ -1,0 +1,31 @@
+﻿<Table id="c53afcd30f924a5e909d44875d7ba43f" code="stu_enroll" name="注册表" canModifyData="true" canModifyStructure="true" isGenerateApi="false">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2024-05-31 15:02:36]]></CreationTime>
+  <Modifier><![CDATA[elibi]]></Modifier>
+  <ModificationTime><![CDATA[2024-06-09 15:36:49]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="6df6af68e8174261b320d2af28e97e23" code="stuNo" name="学号" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="690c3530f7dd46ee9f5f04274adb15f7" code="pass_Word" name="密码" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="3cca9db16a0c4e7a87f1a40629920d5c" code="gender" name="性别" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true" />
+  <ExtInfo>
+    <TableApi actions="" />
+  </ExtInfo>
+</Table>

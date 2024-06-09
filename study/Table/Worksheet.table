@@ -1,0 +1,31 @@
+﻿<Table id="87d529199518455699d10998b9a0404d" code="Worksheet" name="计算表" canModifyData="true" canModifyStructure="true" isGenerateApi="false">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2024-05-31 21:48:44]]></CreationTime>
+  <Modifier><![CDATA[elibi]]></Modifier>
+  <ModificationTime><![CDATA[2024-06-03 19:17:55]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="128" precision="" isNType="false" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="ce3e8374f76b43e281399054155bad30" code="course" name="课程名" domain="" dataType="char" length="255" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="6c544e9335f740b49036d41002082504" code="score" name="成绩" domain="" dataType="integer" length="50" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="e152a74486974f73938fc7f7a779a941" code="credit" name="学分" domain="" dataType="integer" length="50" precision="" isNType="false" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true" />
+  <ExtInfo>
+    <TableApi actions="" />
+  </ExtInfo>
+</Table>

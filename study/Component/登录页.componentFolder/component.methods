@@ -1,0 +1,87 @@
+﻿<Methods>
+  <Method Code="JGButtonGroupItem2_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGButtonGroupItem2_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_OpenComponentReturnData1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-05-31 17:35:38">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form3","windowName":"注册页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"dialogWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":[{"destType":"control","dest":"JGTextBox1","srcType":"expression","src":"[stu_enroll].[stuNo]","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null},{"destType":"control","dest":"JGPassword1","srcType":"expression","src":"[stu_enroll].[pass_Word]","updateDestEntityMethod":"","isCleanDestEntityData":false,"destFieldMapping":null}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form3</WindowCode><WindowName>注册页</WindowName><TargetContainerType>dialogWindow</TargetContainerType><BrowerWindowTitle /><IsDynamicContainer>False</IsDynamicContainer><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster><dtReturnValue><TargetType>control</TargetType><Target>JGTextBox1</Target><SourceType>expression</SourceType><Source>[stu_enroll].[stuNo]</Source></dtReturnValue><dtReturnValue><TargetType>control</TargetType><Target>JGPassword1</Target><SourceType>expression</SourceType><Source>[stu_enroll].[pass_Word]</Source></dtReturnValue></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGButtonGroupItem1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <ExtInfo Name="JGButtonGroupItem1_单击事件" SourceType="Common" MethodDir="ControlMethod" />
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <DeprecatedDesc><![CDATA[]]></DeprecatedDesc>
+    <AnnotationInfo><![CDATA[]]></AnnotationInfo>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_CheckUnique1" />
+  <if isEnabled="True" isDebug="False" code="IfCode1">
+    <define>
+      <expression>BR_OUT.BR_CheckUnique1.isUnique==True</expression>
+      <remark />
+    </define>
+    <sequence>
+      <evaluateRule code="BR_ShowMessage1_1" />
+    </sequence>
+  </if>
+  <else isEnabled="True" isDebug="False">
+    <define>
+      <remark />
+    </define>
+    <sequence>
+      <evaluateRule code="BR_AddDataBaseRecord1" />
+      <evaluateRule code="BR_ShowMessage1" />
+      <evaluateRule code="BR_OpenComponentReturnData1" />
+    </sequence>
+  </else>
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="CheckUnique" ruleName="前后台唯一性检查" instanceCode="BR_CheckUnique1" instanceName="前后台唯一性检查" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 16:09:13">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isBackgroudCheck":true,"entityName":"stu_enroll","tableName":"stu_enroll","isAutoSelectRepeatRow":true,"checkFields":[{"entityFiled":"stu_enroll.gender","tableField":"stu_enroll.gender"},{"entityFiled":"stu_enroll.pass_Word","tableField":"stu_enroll.pass_Word"},{"entityFiled":"stu_enroll.stuNo","tableField":"stu_enroll.stuNo"}],"dsWhere":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><IsBackgroudCheck>true</IsBackgroudCheck><EntityName>stu_enroll</EntityName><TableName>stu_enroll</TableName><IsAutoSelectRepeatRow>true</IsAutoSelectRepeatRow><Condition><![CDATA[<NewDataSet />]]]]><![CDATA[></Condition></dtMaster><dtCheckFields><EntityField>stu_enroll.gender</EntityField><TableField>stu_enroll.gender</TableField></dtCheckFields><dtCheckFields><EntityField>stu_enroll.pass_Word</EntityField><TableField>stu_enroll.pass_Word</TableField></dtCheckFields><dtCheckFields><EntityField>stu_enroll.stuNo</EntityField><TableField>stu_enroll.stuNo</TableField></dtCheckFields></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="AddDataBaseRecord" ruleName="新增数据库记录" instanceCode="BR_AddDataBaseRecord1" instanceName="新增数据库记录" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 16:28:57">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourcesMapping":[{"dataMap":[{"colName":"stu_register.pass_Word","colValue":"CC.JGPassword1.Value","valueType":"expression"},{"colName":"stu_register.stuNo","colValue":"CC.JGTextBox1.Value","valueType":"expression"}],"dataSource":"stu_register"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><TableName>stu_register</TableName><ID>2c2f73de-e34e-47a0-a791-e562c05567aa</ID></dtMaster><dtTableColumns><MasterID>2c2f73de-e34e-47a0-a791-e562c05567aa</MasterID><TargetField>stu_register.pass_Word</TargetField><ValueType>expression</ValueType><ValueField>CC.JGPassword1.Value</ValueField></dtTableColumns><dtTableColumns><MasterID>2c2f73de-e34e-47a0-a791-e562c05567aa</MasterID><TargetField>stu_register.stuNo</TargetField><ValueType>expression</ValueType><ValueField>CC.JGTextBox1.Value</ValueField></dtTableColumns></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 16:02:44">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"登录成功！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"登录成功！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime><IsUnModal>False</IsUnModal></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="OpenComponentReturnData" ruleName="打开窗体并返回数据" instanceCode="BR_OpenComponentReturnData1" instanceName="打开窗体并返回数据" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-05-31 21:15:44">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"openType":"appoint","windowCode":"form4","windowName":"主页","languageType":"","languageCode":"","windowNumSource":"","targetContainerType":"currentWindow","browerWindowTitle":"","browerWindowFlag":"","isDynamicContainer":false,"windowContainer":"","heightExp":"","widthExp":"","isAsyn":false,"divCode":"","openLocation":"","dialogType":"","dialogFlag":"","heightType":"","heightUnit":"","widthType":"","widthUnit":"","isPushMainWindow":false,"inputParams":null,"returnMapping":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><OpenType>appoint</OpenType><WindowCode>form4</WindowCode><WindowName>主页</WindowName><TargetContainerType>currentWindow</TargetContainerType><BrowerWindowTitle /><IsDynamicContainer>False</IsDynamicContainer><IsChooseLanguage>False</IsChooseLanguage><HeightExp /><WidthExp /><IsAsyn>False</IsAsyn></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1_1" instanceName="显示设置的提示信息_1" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="elibi" lastModifiedTime="2024-06-09 16:12:35">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","unModal":false,"simpleChinesePrompt":{"msgnote":"\"登录失败！\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"登录失败！"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime><IsUnModal>False</IsUnModal></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>
